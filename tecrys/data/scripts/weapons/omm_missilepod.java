@@ -71,14 +71,14 @@ public class omm_missilepod implements EveryFrameWeaponEffectPlugin {
                         FIGHTER.setFacing(diffdrone + FIGHTER.getFacing());        //sets facing of the drone
 
                         ShipAPI player = Global.getCombatEngine().getPlayerShip();
-                        if (player == this.SHIP && !FIGHTER.isLanding() && !FIGHTER.isLiftingOff()) {
-                            MagicRender.singleframe(sprite, dronewep.getLocation(), size, dronewep.getCurrAngle(), Color.WHITE, false, CombatEngineLayers.FIGHTERS_LAYER);
-                            FIGHTER.resetDefaultAI();
-                        }
+
                         if (Mouse.isButtonDown(0)) {
                             FIGHTER.giveCommand(ShipCommand.FIRE, mousepos, 0);           //clicky left drone shooty
                         }
                         if (player != this.SHIP) {
+                            for (WeaponGroupAPI group : FIGHTER.getWeaponGroupsCopy()){
+                            this.FIGHTER.giveCommand(ShipCommand.TOGGLE_AUTOFIRE, null, FIGHTER.getWeaponGroupsCopy().indexOf(group));       
+                            }
                             sprite = null;
                         }
                         for (WeaponAPI weaponAPI : list) {
@@ -112,6 +112,7 @@ public class omm_missilepod implements EveryFrameWeaponEffectPlugin {
             return;
         }
         if (isWeaponSwappedmissile) {
+                          this.FIGHTER.setShipAI(null);
             return;
         }
         if (!isWeaponSwappedmissile) {
@@ -125,6 +126,7 @@ public class omm_missilepod implements EveryFrameWeaponEffectPlugin {
 
                     {
                         this.FIGHTER = fighterWingAPI.getLeader();
+                                                                        this.FIGHTER.resetDefaultAI();
                         MutableShipStatsAPI mutableShipStatsAPI = this.FIGHTER.getMutableStats();
                         ShipVariantAPI shipVariantAPI = mutableShipStatsAPI.getVariant().clone();
                         this.FIGHTER.getFleetMember().setVariant(shipVariantAPI, false, true);
