@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="FreitagCorporation:jar">
+    <output-path>$PROJECT_DIR$/../Freitag-Output/artifacts/FreitagCorporationjar</output-path>
+    <root id="archive" name="FreitagCorporation-master.jar">
+      <element id="module-output" name="FreitagCorporation-master" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../starsector-core/lwjgl.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../starsector-core/lwjgl_util.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../GraphicsLib/jars/Graphics.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../DroneLib/jars/DroneLib.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../MagicLib/jars/MagicLib.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../LazyLib/jars/LazyLib.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../starsector-core/starfarer.api.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
