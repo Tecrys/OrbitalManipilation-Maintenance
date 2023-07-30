@@ -1,0 +1,3 @@
+id,name,faction,desc,script,icon,order
+freitag_submarket,"Freitag Co. 
+Branch",freitag_corporation,A Freitag Corporation subsidiary has settled here. Premium ships and equipment for customers with more refined tastes.,tecrys.data.scripts.world.omm_marketplugin,,0

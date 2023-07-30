@@ -2,7 +2,7 @@ package tecrys.data.scripts.world;
 
 import com.fs.starfarer.api.campaign.SectorAPI;
 import com.fs.starfarer.api.campaign.SectorGeneratorPlugin;
-import data.scripts.world.subsidiaries.FreitagHQ;
+import tecrys.data.scripts.world.subsidiaries.FreitagHQ;
 
 public class ommGen implements SectorGeneratorPlugin {
 

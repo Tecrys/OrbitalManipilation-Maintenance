@@ -1,5 +1,6 @@
 package tecrys.data.scripts.world.subsidiaries;
 
+import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.CustomCampaignEntityAPI;
 import com.fs.starfarer.api.campaign.SectorAPI;
 import com.fs.starfarer.api.campaign.SectorEntityToken;
@@ -56,5 +57,6 @@ public class FreitagHQ {
                 false //used by the method to make a market hidden like a pirate base, not recommended for generating markets in a core world
         );
         HQmarket.addIndustry(Industries.GROUNDDEFENSES, new ArrayList(Arrays.asList((Object[]) new String[]{Items.DRONE_REPLICATOR})));
+
     }
 }

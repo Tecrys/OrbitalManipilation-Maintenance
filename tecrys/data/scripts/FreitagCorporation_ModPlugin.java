@@ -2,7 +2,8 @@ package tecrys.data.scripts;
 
 import com.fs.starfarer.api.BaseModPlugin;
 import com.fs.starfarer.api.Global;
-import data.scripts.world.ommGen;
+import com.fs.starfarer.api.campaign.econ.MarketAPI;
+import tecrys.data.scripts.world.ommGen;
 import exerelin.campaign.SectorManager;
 
 public class FreitagCorporation_ModPlugin extends BaseModPlugin {
@@ -24,6 +25,23 @@ public class FreitagCorporation_ModPlugin extends BaseModPlugin {
         boolean haveNexerelin = Global.getSettings().getModManager().isModEnabled("nexerelin");
         if (!haveNexerelin || SectorManager.getCorvusMode()) {
             new ommGen().generate(Global.getSector());
+            
+
         }
+    }
+    @Override
+    public void onNewGameAfterEconomyLoad(){
+                            MarketAPI market = Global.getSector().getEconomy().getMarket("eldfell"); //to get the market 
+                    if (market != null) {
+        market.addSubmarket("freitag_submarket"); //add the submarket into the market
+            }
+                            MarketAPI market2 = Global.getSector().getEconomy().getMarket("new_maxios"); //to get the market 
+                    if (market2 != null) {
+        market2.addSubmarket("freitag_submarket"); //add the submarket into the market
+            }
+                            MarketAPI market3 = Global.getSector().getEconomy().getMarket("ilm"); //to get the market 
+                    if (market3 != null) {
+        market3.addSubmarket("freitag_submarket"); //add the submarket into the market
+            }
     }
 }
