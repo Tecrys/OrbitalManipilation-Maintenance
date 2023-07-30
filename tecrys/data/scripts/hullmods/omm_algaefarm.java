@@ -20,23 +20,23 @@ public class omm_algaefarm extends BaseHullMod {
     private static final Map soy = new HashMap();
 
     static {
-        soy.put(HullSize.DEFAULT, 2f);
-        soy.put(HullSize.FIGHTER, 2f);
-        soy.put(HullSize.FRIGATE, 2f);
-        soy.put(HullSize.DESTROYER, 4f);
-        soy.put(HullSize.CRUISER, 6f);
-        soy.put(HullSize.CAPITAL_SHIP, 8f);
+        soy.put(HullSize.DEFAULT, 2);
+        soy.put(HullSize.FIGHTER, 2);
+        soy.put(HullSize.FRIGATE, 2);
+        soy.put(HullSize.DESTROYER, 4);
+        soy.put(HullSize.CRUISER, 6);
+        soy.put(HullSize.CAPITAL_SHIP, 8);
     }
 
     private static final Map fuel = new HashMap();
 
     static {
-        fuel.put(HullSize.DEFAULT, 2f);
-        fuel.put(HullSize.FIGHTER, 2f);
-        fuel.put(HullSize.FRIGATE, 2f);
-        fuel.put(HullSize.DESTROYER, 4f);
-        fuel.put(HullSize.CRUISER, 6f);
-        fuel.put(HullSize.CAPITAL_SHIP, 8f);
+        fuel.put(HullSize.DEFAULT, 2);
+        fuel.put(HullSize.FIGHTER, 2);
+        fuel.put(HullSize.FRIGATE, 2);
+        fuel.put(HullSize.DESTROYER, 4);
+        fuel.put(HullSize.CRUISER, 6);
+        fuel.put(HullSize.CAPITAL_SHIP, 8);
     }
     //This above is kinda important, you have to define HullSize.FIGHTER and HullSize.DEFAULT because for some reason people are spawning old precursor fighters and the mod is randomly summoning these cringe gargoyles and CTDing the game. If you don't want them to get the bonus, I would just set it to 0f or something...
 
