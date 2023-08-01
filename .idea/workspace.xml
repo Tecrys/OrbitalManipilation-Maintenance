@@ -5,26 +5,46 @@
       <artifact name="FreitagCorporation:jar" />
     </artifacts-to-build>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8f9751d-5e21-41da-be5b-b99906bb339c" name="Default Changelist" comment="" />
+    <list default="true" id="a8f9751d-5e21-41da-be5b-b99906bb339c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tecrys/data/scripts/weapons/macroupperlefteveryframe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/DroneLib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FreitagCorporation-master.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FreitagCorporation-master.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/omm_macrocheira.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/omm_macrocheira.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/weapons/omm_macrocheira_left_upper_arm2.wpn" beforeDir="false" afterPath="$PROJECT_DIR$/data/weapons/omm_macrocheira_left_upper_arm2.wpn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tecrys/data/scripts/FreitagCorporation_ModPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/tecrys/data/scripts/FreitagCorporation_ModPlugin.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1vQthp19TTOM3fWJB3O9qE475Lu" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../starsector-core/lwjgl_util.jar" />
-    <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.1954023"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tecrys.data.scripts.weapons" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">

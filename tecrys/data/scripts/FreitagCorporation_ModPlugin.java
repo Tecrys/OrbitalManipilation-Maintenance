@@ -4,6 +4,7 @@ import com.fs.starfarer.api.BaseModPlugin;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import tecrys.data.scripts.world.ommGen;
+//import exerelin.campaign.SectorManager;
 import exerelin.campaign.SectorManager;
 
 public class FreitagCorporation_ModPlugin extends BaseModPlugin {
