@@ -15,7 +15,9 @@
     "civgrade",
     "omm_mainframelink",
     "omm_wing_range_increase",
-    "omm_algaefarm"
+    "omm_algaefarm",
+    "autorepair",
+    "delicate"
   ],
   "builtInWings": [
     "omm_pddrone_wing"
