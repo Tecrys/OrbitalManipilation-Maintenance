@@ -31,12 +31,12 @@
     "WS0007": "omm_macrocheira_right_hand",
     "WS0008": "omm_macrocheira_left_hand",
     "WS0009": "omm_macrocheira_algae_pods",
-    "WS0010": "omm_macrocheira_left_upper_arm",
-    "WS0011": "omm_macrocheira_right_upper_arm",
-    "WS0012": "omm_macrocheira_left_lower_arm",
-    "WS0013": "omm_macrocheira_right_lower_arm",
-    "WS0014": "omm_macrocheira_left_hand",
-    "WS0015": "omm_macrocheira_right_hand",
+    "WS0010": "omm_macrocheira_left_upper_arm2",
+    "WS0011": "omm_macrocheira_right_upper_arm2",
+    "WS0012": "omm_macrocheira_left_lower_arm2",
+    "WS0013": "omm_macrocheira_right_lower_arm2",
+    "WS0014": "omm_macrocheira_left_hand2",
+    "WS0015": "omm_macrocheira_right_hand2",
     "shield": "FreitagCorporation_ShieldEffect_wpn"
   },
   "weaponSlots": [
