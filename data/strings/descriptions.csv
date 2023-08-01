@@ -65,10 +65,7 @@ The pods themselves are quite valuable since it takes about six months for the e
 How the Freitag Corporation was able to achieve this level of sophisticated bio-engineering and zero-g aquaculture puzzles even the most distinguished experts on those fields of research who deem it
 impossible to keep the ecosystems stable without regularly adding biological material.
 
-In combat the algae pods can be deployed clouding an area with nanobots and algae particles to improve weapon and engine repair rates as well as fighter production but these ships are only deployed in the 
-most desperate of situations, though there are examples of admirals using mobile algae farms as a distraction.
-
-On a side node, fleets with Macrocheira-class ships seem to have more crew casualties even if no combat activities were conducted and higher than average missing person reports are filed. 
+On a side note, fleets with Macrocheira-class ships seem to have more crew casualties even if no combat activities were conducted and higher than average missing person reports are filed. 
 Among superstitious crew this is proof for these ships being haunted.",,,
 omm_pddrone,SHIP,"A staple of Freitag Corporation ships, modular drones can be euipped with many tools using the standardized mount system widely used throughout the Persean Sector. Albeit intended as
 precision tool carriers said mount system makes the drones able to accept a wide choice of weapons. 
@@ -120,12 +117,14 @@ Compared to drones built by other manufacturers this system gives the user unpar
 This particular drone model has a large hybrid hardpoint.",,,
 FreitagCorporation_ShieldDrone,SHIP,"Shield drones are deployed by several Freitag Corporation vessels to protect the mothership from debris, asteroid fragments or enemy ordnance. 
 The experience would be too traumatizing for humans to be controlled remotely via the companies trademark wireless consciousness shift and thus the drones have to rely on a crude theta level AI. This is the highest grade AI level permitted on civilian grade ships after the events of the second AI war and unfortunately drone performance is noticably limited by that.",,,
+omm_algaepod,SHIP,A cluster of algae pods deployed during combat by Limnopilos.,,,
 ,,,,,
 omm_octocorallia,SHIP,Automated Defense platform deployed by the Sandhopper-class. Is automatically deployed if within 300 SU of a capture point or 30 seconds after combat has started.,,,
 ,,,,,
-FreitagCorporation_Manipulator,SHIP_SYSTEM,Activate to gain a sicnificant speed boost and shield damage resistance. If the ship collides with an enemy it pushes it away. Heavier ships are pushed less far. Does not deal damage apart from possible collisions that might occur.,,,
-FreitagCorporation_FluxEater,SHIP_SYSTEM,"Channels flux over 3 seconds from allied ships near the cursor to the Euphausia up to 1500 SU away. Influenced by flux dissipation rate, can sometimes affect more than 1 ship if they are close to one another.",,,
-FreitagCorporation_TemporalShellBuff,SHIP_SYSTEM,Compresses time for target allied ship near the cursor by a factor of 3 for 3 seconds.,,,
+FreitagCorporation_Manipulator,SHIP_SYSTEM,Activate to gain a sicnificant speed boost and shield damage resistance. If the ship collides with an enemy it pushes it away. Heavier ships are pushed less far. Does not deal damage apart from possible collisions that might occur.,Movement,Activate to gain a sicnificant speed boost and shield damage resistance. If the ship collides with an enemy it pushes it away. Heavier ships are pushed less far. Does not deal damage apart from possible collisions that might occur.,
+FreitagCorporation_FluxEater,SHIP_SYSTEM,"Channels flux over 3 seconds from allied ships near the cursor to the Euphausia up to 1500 SU away. Influenced by flux dissipation rate, can sometimes affect more than 1 ship if they are close to one another.",Special,"Channels flux over 3 seconds from allied ships near the cursor to the Euphausia up to 1500 SU away. Influenced by flux dissipation rate, can sometimes affect more than 1 ship if they are close to one another.",
+FreitagCorporation_TemporalShellBuff,SHIP_SYSTEM,Compresses time for target allied ship near the cursor by a factor of 3 for 3 seconds.,Special,Compresses time for target allied ship near the cursor by a factor of 3 for 3 seconds.,
+omm_jumper,SHIP_SYSTEM,The ship boosts ahead quickly in an arc possibly being able to get behind other ships.,Movement,The ship boosts ahead quickly in an arc possibly being able to get behind other ships.,
 ,,,,,
 freitag_hq,CUSTOM,"A dead titan lies ahead amidst the Valkyries. Buzzing swarms of flies surround it slowly eating away the titans flesh, hollowing out its bones, sucking away the blood still left in its vanes. The corpse eaters home hovers right next to the decaying husk of the once powerful giant, each tiny piece of it's body busily taken to the hive. A rotting cadaver consumed by greed.
 
