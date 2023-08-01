@@ -1,0 +1,287 @@
+{
+  "hullName": "Macrocheira",
+  "hullId": "omm_macrocheira",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/ships/Macrocheira/omm_macrocheira.png",
+  "style": "FREITAG_CORP_TECH",
+  "height": 263,
+  "width": 268,
+  "center": [134, 144],
+  "collisionRadius": 153,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 152.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "civgrade",
+    "omm_mainframelink",
+    "omm_wing_range_increase",
+    "omm_algaefarm"
+  ],
+  "builtInWings": [
+    "omm_pddrone_wing"
+  ],
+  "builtInWeapons": {
+    "MODULARPD": "omm_pddronedeco",
+    "WS0001": "omm_macrocheira_right_leg",
+    "WS0002": "omm_macrocheira_left_leg",
+    "WS0003": "omm_macrocheira_right_upper_arm",
+    "WS0004": "omm_macrocheira_left_upper_arm",
+    "WS0005": "omm_macrocheira_right_lower_arm",
+    "WS0006": "omm_macrocheira_left_lower_arm",
+    "WS0007": "omm_macrocheira_right_hand",
+    "WS0008": "omm_macrocheira_left_hand",
+    "WS0009": "omm_macrocheira_algae_pods",
+    "WS0010": "omm_macrocheira_left_upper_arm",
+    "WS0011": "omm_macrocheira_right_upper_arm",
+    "WS0012": "omm_macrocheira_left_lower_arm",
+    "WS0013": "omm_macrocheira_right_lower_arm",
+    "WS0014": "omm_macrocheira_left_hand",
+    "WS0015": "omm_macrocheira_right_hand",
+    "shield": "FreitagCorporation_ShieldEffect_wpn"
+  },
+  "weaponSlots": [
+    {
+      "id": "shield",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [2, 0]
+    },
+    {
+      "id": "MODULARPD",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-121.5, 198]
+    },
+    {
+      "id": "pdslot",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": -0,
+      "locations": [-123.5, 175.5]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-113, 88.5]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 4.5,
+      "locations": [-3.5, -78.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -4.5,
+      "locations": [-3.5, 78.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-13.5, -154.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-13.5, 154.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [101.5, -152.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [101.5, 152.5]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [206.5, -155]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [206.5, 155]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-142, -0],
+      "renderOrderMod": 100
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-13.5, -198]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-13.5, 198]
+    },
+    {
+      "id": "WS0012",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [101, -199]
+    },
+    {
+      "id": "WS0013",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [101, 199]
+    },
+    {
+      "id": "WS0014",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [207, -197]
+    },
+    {
+      "id": "WS0015",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [207, 197]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-139, -15],
+      "length": 70.5,
+      "width": 26,
+      "angle": 180,
+      "contrailSize": 26,
+      "style": "FreitagCorporation_Engine"
+    },
+    {
+      "location": [-139, 15],
+      "length": 70.5,
+      "width": 26,
+      "angle": -180,
+      "contrailSize": 26,
+      "style": "FreitagCorporation_Engine"
+    }
+  ],
+  "bounds": [
+    -276.5, 53.5,
+    -254.5, 73,
+    -155, 63,
+    -175.5, 118,
+    -145.5, 129.5,
+    -87, 61.5,
+    -60, 32.5,
+    -57.5, 58,
+    -38, 51,
+    -32, 41,
+    5.5, 80,
+    -26.5, 92,
+    -38, 80,
+    -21.5, 123.5,
+    -18.5, 103,
+    34, 91,
+    34, 90,
+    3, 42.5,
+    11.5, 27,
+    48, 55,
+    53.5, 73.5,
+    78, 87.5,
+    101, 84.5,
+    114.5, 52.5,
+    97, 27.5,
+    97, -27.5,
+    114.5, -52.5,
+    101, -84.5,
+    78, -87.5,
+    53.5, -73.5,
+    48, -55,
+    11.5, -27,
+    3, -42.5,
+    34, -90,
+    34, -91,
+    -18.5, -103,
+    -21.5, -123.5,
+    -38, -80,
+    -26.5, -92,
+    5.5, -80,
+    -32, -41,
+    -38, -51,
+    -57.5, -58,
+    -60, -32.5,
+    -87, -61.5,
+    -145.5, -129.5,
+    -175.5, -118,
+    -155, -63,
+    -254.5, -73,
+    -276.5, -53.5,
+    -157, -0
+  ]
+}

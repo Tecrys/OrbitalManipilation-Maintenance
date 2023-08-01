@@ -43,5 +43,9 @@ public class FreitagCorporation_ModPlugin extends BaseModPlugin {
                     if (market3 != null) {
         market3.addSubmarket("freitag_submarket"); //add the submarket into the market
             }
+                                                MarketAPI market4 = Global.getSector().getEconomy().getMarket("freitag_hq"); //to get the market 
+                    if (market4 != null) {
+        market4.addSubmarket("freitag_submarket"); //add the submarket into the market
+            }
     }
 }

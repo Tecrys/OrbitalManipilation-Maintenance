@@ -1,11 +1,11 @@
 {
-  "id": "omm_macrocheira_right_arms",
+  "id": "omm_macrocheira_left_lower_arm",
   "specClass": "beam",
   "type": "DECORATIVE",
   "size": "SMALL",
   "collisionClass": "RAY",
   "collisionClassByFighter": "RAY_FIGHTER",
-  "turretSprite": "graphics/ships/Macrocheira/omm_macrocheira_left_arms.png",
+  "turretSprite": "graphics/ships/Macrocheira/omm_macrocheira_lower_arm_left.png",
   "hardpointSprite": "",
   "glowColor": [
     255,
