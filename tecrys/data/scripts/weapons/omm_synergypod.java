@@ -56,7 +56,7 @@ public class omm_synergypod implements EveryFrameWeaponEffectPlugin {
                 float angle = VectorUtils.getAngle(dronepos, mousepos);
 
                 for (WeaponAPI dronewep : droneweps) {
-                    if (dronewep.getSlot().getId().equals("synergyslot")) {
+                    if (dronewep.getSlot().getId().equals("synergyslot") || dronewep.getSlot().getId().equals("omm_laser")) {
 
                         WeaponGroupAPI Group = FIGHTER.getWeaponGroupFor(weapon);
                         FIGHTER.getVariant().assignUnassignedWeapons();
@@ -71,8 +71,10 @@ public class omm_synergypod implements EveryFrameWeaponEffectPlugin {
                         FIGHTER.setFacing(diffdrone + FIGHTER.getFacing());        //sets facing of the drone
 
                         ShipAPI player = Global.getCombatEngine().getPlayerShip();
-                        if (player == this.SHIP && !this.FIGHTER.isLanding() && !this.FIGHTER.isLiftingOff()) {
-                            MagicRender.singleframe(sprite, dronewep.getLocation(), size, dronewep.getCurrAngle(), Color.WHITE, false, CombatEngineLayers.FIGHTERS_LAYER);
+                        if (player == this.SHIP && !this.FIGHTER.isLanding() && !this.FIGHTER.isLiftingOff() && dronewep.getSlot().getId().equals("omm_laser")) {
+                            int curframe = dronewep.getAnimation().getFrame();
+                            dronewep.getAnimation().setFrame(curframe + 1);
+                            //MagicRender.singleframe(sprite, dronewep.getLocation(), size, dronewep.getCurrAngle(), Color.WHITE, false, CombatEngineLayers.FIGHTERS_LAYER);
 
                         }
                         if (Mouse.isButtonDown(0)) {
