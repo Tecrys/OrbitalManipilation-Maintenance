@@ -9,16 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8f9751d-5e21-41da-be5b-b99906bb339c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tecrys/data/scripts/weapons/macroupperlefteveryframe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/DroneLib.xml" beforeDir="false" />
+    <list default="true" id="a8f9751d-5e21-41da-be5b-b99906bb339c" name="Default Changelist" comment="basic articulation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FreitagCorporation-master.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FreitagCorporation-master.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/hulls/omm_macrocheira.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/omm_macrocheira.ship" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/weapons/omm_macrocheira_left_upper_arm2.wpn" beforeDir="false" afterPath="$PROJECT_DIR$/data/weapons/omm_macrocheira_left_upper_arm2.wpn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tecrys/data/scripts/FreitagCorporation_ModPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/tecrys/data/scripts/FreitagCorporation_ModPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tecrys/data/scripts/weapons/macroupperlefteveryframe.java" beforeDir="false" afterPath="$PROJECT_DIR$/tecrys/data/scripts/weapons/macroupperlefteveryframe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +89,29 @@
       <option name="presentableId" value="Default" />
       <updated>1626506267124</updated>
     </task>
+    <task id="LOCAL-00001" summary="basic articulation">
+      <created>1690910618578</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690910618578</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="basic articulation" />
+    <option name="LAST_COMMIT_MESSAGE" value="basic articulation" />
   </component>
 </project>
