@@ -30,8 +30,8 @@ public class synergypodManager implements AdvanceableListener {
         }
     }
 
-    float angleFromBasepos = 90f;
-    float distBetweenClusters = 60f;
+    float angleFromBasepos = 130f;
+    float distBetweenClusters = 140f;
     float distFromClusterCenterToDrone = 30f;
 
     //each wing groups up into a triangle

@@ -23,6 +23,7 @@
     "omm_synergypod_wing",
     "omm_synergypod_wing",
     "omm_pddrone_wing",
+    "omm_missilepod_wing",
     "omm_missilepod_wing"
   ],
   "builtInWeapons": {

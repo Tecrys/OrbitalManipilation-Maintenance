@@ -20,7 +20,6 @@
       "weapons": {
         "ballisticslot": "heavymortar",
         "compositeslot": "breachpod",
-        "droneslot": "gravitonbeam",
         "largeslot": "guardian",
         "pdslot": "irpulse"
       }

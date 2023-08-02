@@ -19,7 +19,6 @@
       "weapons": {
         "ballisticslot": "heavyac",
         "compositeslot": "salamanderpod",
-        "droneslot": "heavyblaster",
         "largeslot": "tachyonlance",
         "pdslot": "pdburst"
       }

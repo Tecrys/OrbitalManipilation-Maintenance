@@ -1,4 +1,4 @@
-package tecrys.data.fighters.missile_pod;
+package tecrys.data.fighters.small_pod;
 
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.BaseEveryFrameCombatPlugin;
@@ -9,13 +9,13 @@ import tecrys.data.utils.utils;
 
 import java.util.List;
 
-public class missilepodAI extends BaseEveryFrameCombatPlugin {
+public class smallpodAI extends BaseEveryFrameCombatPlugin {
 
     private final pidController controller;
     private final ShipAPI mothership;
     private final ShipAPI drone;
 
-    public missilepodAI(ShipAPI drone, ShipAPI mothership) {
+    public smallpodAI(ShipAPI drone, ShipAPI mothership) {
 
         this.drone = drone;
         this.mothership = mothership;
@@ -28,7 +28,7 @@ public class missilepodAI extends BaseEveryFrameCombatPlugin {
     public void advance(float amount, List<InputEventAPI> events) {
 
         if (Global.getCombatEngine().isPaused()) return;
-        missilepodManager manager = utils.getFirstListenerOfClass(mothership, missilepodManager.class);
+        smallpodManager manager = utils.getFirstListenerOfClass(mothership, smallpodManager.class);
         if (manager == null) return;
 
         controller.move(manager.getDesiredPosition(drone), drone);

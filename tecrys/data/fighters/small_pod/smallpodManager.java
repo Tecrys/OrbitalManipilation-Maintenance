@@ -1,4 +1,4 @@
-package tecrys.data.fighters.missile_pod;
+package tecrys.data.fighters.small_pod;
 
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.FighterWingAPI;
@@ -11,7 +11,7 @@ import org.lwjgl.util.vector.Vector2f;
 
 import java.util.ArrayList;
 
-public class missilepodManager implements AdvanceableListener {
+public class smallpodManager implements AdvanceableListener {
 
     public final ShipAPI mothership;
 
@@ -20,18 +20,18 @@ public class missilepodManager implements AdvanceableListener {
 
     private final IntervalUtil deadDroneInterval = new IntervalUtil(0.2f, 0.2f);
 
-    public missilepodManager(ShipAPI mothership) {
+    public smallpodManager(ShipAPI mothership) {
         this.mothership = mothership;
 
         for (FighterWingAPI wing : mothership.getAllWings()) {
-            if (wing.getSpec().getId().equals("omm_missilepod_wing")) {
+            if (wing.getSpec().getId().equals("omm_smallpod_wing")) {
                 relevantWings.add(wing);
             }
         }
     }
 
-    float angleFromBasepos = 270f;
-    float distBetweenClusters = 80f;
+    float angleFromBasepos = 130f;
+    float distBetweenClusters = 140f;
     float distFromClusterCenterToDrone = 30f;
 
     //each wing groups up into a triangle

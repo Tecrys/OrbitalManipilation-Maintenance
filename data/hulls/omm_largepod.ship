@@ -16,9 +16,11 @@
     "shield_always_on",
     "do_not_back_off",
     "fluxshunt",
-    "omm_mainframelink"
+    "omm_mainframelink",
+    "omm_largepodai"
   ],
   "builtInWeapons": {
+    "omm_laser": "omm_targeting_laser",
     "shield": "FreitagCorporation_ShieldEffect_wpn"
   },
   "weaponSlots": [
@@ -39,6 +41,15 @@
       "arc": 90,
       "angle": 0,
       "locations": [-15.5, -0.5]
+    },
+    {
+      "id": "omm_laser",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 15,
+      "angle": 0,
+      "locations": [26.5, -0]
     }
   ],
   "engineSlots": [
@@ -60,13 +71,11 @@
     }
   ],
   "bounds": [
-    -37.5, 21.5,
-    -19.5, 31,
-    26.5, 24,
-    38, 14,
-    38, -14,
-    26.5, -24,
-    -19.5, -31,
-    -37.5, -21.5
+    -35.5, 17.5,
+    -20, 30,
+    33.5, 18.5,
+    33.5, -18.5,
+    -20, -30,
+    -35.5, -17.5
   ]
 }

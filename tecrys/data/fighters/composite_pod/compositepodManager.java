@@ -30,9 +30,9 @@ public class compositepodManager implements AdvanceableListener {
         }
     }
 
-    float angleFromBasepos = 270f;
-    float distBetweenClusters = 90f;
-    float distFromClusterCenterToDrone = -110f;
+    float angleFromBasepos = 150f;
+    float distBetweenClusters = 210f;
+    float distFromClusterCenterToDrone = 30f;
 
     //each wing groups up into a triangle
     //odd no. of wings has one in center + 2 on each side, even no. of wings has non in center & all on sides

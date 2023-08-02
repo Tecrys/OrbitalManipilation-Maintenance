@@ -17,9 +17,9 @@
     "do_not_back_off"
   ],
   "builtInWings": [
-    "omm_compositepod_wing",
-    "omm_compositepod_wing",
     "omm_missilepod_wing",
+    "omm_compositepod_wing",
+    "omm_compositepod_wing",
     "omm_missilepod_wing"
   ],
   "builtInWeapons": {

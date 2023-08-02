@@ -1,4 +1,4 @@
-package tecrys.data.fighters.missile_pod;
+package tecrys.data.fighters.ballistic_pod;
 
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.BaseHullMod;
@@ -9,9 +9,9 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import tecrys.data.utils.utils;
 
-public class missilepodHullmod extends BaseHullMod {
+public class ballisticpodHullmod extends BaseHullMod {
 
-    public static Logger log = Global.getLogger(missilepodHullmod.class);
+    public static Logger log = Global.getLogger(ballisticpodHullmod.class);
 
     static {
         log.setLevel(Level.DEBUG);
@@ -29,9 +29,9 @@ public class missilepodHullmod extends BaseHullMod {
             ShipAPI source = ship.getWing().getSourceShip();
             if (source != null) {
 
-                missilepodManager manager = utils.getFirstListenerOfClass(source, missilepodManager.class);
+                ballisticpodManager manager = utils.getFirstListenerOfClass(source, ballisticpodManager.class);
                 if (manager == null) {
-                    manager = new missilepodManager(source);
+                    manager = new ballisticpodManager(source);
                     source.addListener(manager);
                 }
 
@@ -43,7 +43,7 @@ public class missilepodHullmod extends BaseHullMod {
  //                   ship.giveCommand(ShipCommand.TOGGLE_AUTOFIRE, null, ship.getWeaponGroupsCopy().indexOf(group));
 //                }
  //           }
-            Global.getCombatEngine().addPlugin(new missilepodAI(ship, source));
+            Global.getCombatEngine().addPlugin(new ballisticpodAI(ship, source));
             ship.setShipAI(null);
 
             ship.setCustomData(key, true);
