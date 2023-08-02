@@ -3,8 +3,8 @@
   "hullId": "omm_crevette",
   "displayName": "Standard",
   "goalVariant": true,
-  "fluxCapacitors": 8,
-  "fluxVents": 8,
+  "fluxCapacitors": 10,
+  "fluxVents": 9,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
@@ -18,7 +18,7 @@
       "mode": "LINKED",
       "weapons": {
         "Plasma": "plasma",
-        "smlhybridslot": "vulcan"
+        "smlhybridslot": "mininglaser"
       }
     }
   ],

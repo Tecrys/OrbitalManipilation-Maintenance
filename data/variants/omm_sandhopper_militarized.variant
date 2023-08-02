@@ -1,23 +1,22 @@
 {
-  "variantId": "omm_crevette_militarized",
-  "hullId": "omm_crevette",
+  "variantId": "omm_sandhopper_militarized",
+  "hullId": "omm_sandhopper",
   "displayName": "militarized",
   "goalVariant": true,
-  "fluxCapacitors": 7,
-  "fluxVents": 8,
+  "fluxCapacitors": 17,
+  "fluxVents": 18,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "militarized_subsystems",
-    "assault_package"
+    "hardenedshieldemitter"
   ],
   "weaponGroups": [
     {
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "Plasma": "plasma",
-        "smlhybridslot": "lightneedler"
+        "compositeslot": "jackhammer",
+        "smlmissileslot": "annihilator"
       }
     }
   ],

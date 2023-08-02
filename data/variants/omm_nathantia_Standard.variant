@@ -18,9 +18,9 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "ballisticslot": "heavymortar",
-        "compositeslot": "breachpod",
-        "largeslot": "guardian",
+        "ballisticslot": "miningblaster",
+        "compositeslot": "jackhammer",
+        "largeslot": "hil",
         "pdslot": "irpulse"
       }
     }

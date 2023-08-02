@@ -14,7 +14,8 @@
   "builtInMods": [
     "omm_mainframelink",
     "omm_wing_range_increase",
-    "do_not_back_off"
+    "do_not_back_off",
+    "ground_support"
   ],
   "builtInWings": [
     "omm_missilepod_wing",

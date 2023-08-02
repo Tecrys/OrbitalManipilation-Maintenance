@@ -3,8 +3,8 @@
   "hullId": "omm_limnopilos",
   "displayName": "militarized",
   "goalVariant": true,
-  "fluxCapacitors": 9,
-  "fluxVents": 9,
+  "fluxCapacitors": 11,
+  "fluxVents": 15,
   "quality": 1,
   "permaMods": [],
   "hullMods": [

@@ -3,14 +3,14 @@
   "hullId": "omm_euphausia",
   "displayName": "militarized",
   "goalVariant": true,
-  "fluxCapacitors": 15,
-  "fluxVents": 15,
+  "fluxCapacitors": 9,
+  "fluxVents": 10,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
     "militarized_subsystems",
-    "assault_package",
-    "targetingunit"
+    "targetingunit",
+    "auxiliarythrusters"
   ],
   "weaponGroups": [
     {
@@ -19,7 +19,7 @@
       "weapons": {
         "pdslot": "pdburst",
         "smlmissileslot": "sabot",
-        "synergyslot": "phasebeam"
+        "synergyslot": "heavyneedler"
       }
     },
     {

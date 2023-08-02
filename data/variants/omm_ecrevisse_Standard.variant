@@ -3,8 +3,8 @@
   "hullId": "omm_ecrevisse",
   "displayName": "Standard",
   "goalVariant": true,
-  "fluxCapacitors": 7,
-  "fluxVents": 8,
+  "fluxCapacitors": 10,
+  "fluxVents": 11,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
@@ -17,14 +17,15 @@
       "weapons": {
         "lefthook": "minelayer2",
         "pdslot": "lrpdlaser",
-        "righthook": "breachpod",
         "smlhybridslot": "mininglaser"
       }
     },
     {
       "autofire": false,
       "mode": "LINKED",
-      "weapons": {}
+      "weapons": {
+        "righthook": "jackhammer"
+      }
     },
     {
       "autofire": false,

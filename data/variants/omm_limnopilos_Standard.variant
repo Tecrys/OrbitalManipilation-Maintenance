@@ -3,12 +3,13 @@
   "hullId": "omm_limnopilos",
   "displayName": "Standard",
   "goalVariant": true,
-  "fluxCapacitors": 10,
+  "fluxCapacitors": 8,
   "fluxVents": 12,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "insulatedengine"
+    "insulatedengine",
+    "auxiliarythrusters"
   ],
   "weaponGroups": [
     {
