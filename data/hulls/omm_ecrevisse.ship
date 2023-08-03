@@ -13,7 +13,7 @@
   "viewOffset": 0,
   "builtInMods": [
     "civgrade",
-    "tow_cable",
+    "omm_tow_cable",
     "omm_mainframelink"
   ],
   "builtInWings": [

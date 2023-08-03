@@ -14,7 +14,8 @@
   "builtInMods": [
     "civgrade",
     "omm_mainframelink",
-    "repair_gantry"
+    "surveying_equipment",
+    "hiressensors"
   ],
   "builtInWings": [
     "omm_ballisticpod_wing",

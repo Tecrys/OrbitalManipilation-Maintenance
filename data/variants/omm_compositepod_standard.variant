@@ -2,7 +2,7 @@
   "variantId": "omm_compositepod_standard",
   "hullId": "omm_compositepod",
   "displayName": "Standard",
-  "goalVariant": true,
+  "goalVariant": false,
   "fluxCapacitors": 0,
   "fluxVents": 0,
   "quality": 1,
@@ -10,10 +10,10 @@
   "hullMods": [],
   "weaponGroups": [
     {
-      "autofire": t,
+      "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "compositeslot": "salamanderpod"
+        "compositeslot": "jackhammer"
       }
     }
   ],

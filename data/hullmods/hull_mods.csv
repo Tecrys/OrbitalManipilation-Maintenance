@@ -10,6 +10,9 @@ Unfortunately no weapon groups can be set up and all drones will fire simultanio
 Mobile Algae Farm,omm_algaefarm,,,,,,,,TRUE,,0,0,0,0,tecrys.data.scripts.hullmods.omm_algaefarm,Pods of condensed algae flourish due to the abundance of ambient solar radiation. Produces 2/4/6/8 supplies and 3/6/9/12 fuel every day.,,graphics/hullmods/omm_algae_hullmod.png
 no missile reload,omm_no_missile_reload,,,,,,,,,TRUE,0,0,0,0,tecrys.data.scripts.hullmods.omm_no_missile_reload,,,graphics/hullmods/DroneHullmod.png
 Factory Limiter Override,omm_factory_override,,,Freitag Corporation,no_build_in,,,,TRUE,,0,0,0,0,tecrys.data.scripts.hullmods.omm_factory_override,"The crew has access to the codes necessary to override the factory limiter software installed on civilian grade ships produced by the Freitag Corporation, effectively doubling all positive effects of Militarized Subsystems, Assault Package and Escort Package. The fact that they are able to remove such limiters on ships produced by other manufacturers has gained them the allegation of industrial espionage but could not be proven so far.",,graphics/hullmods/limiter_override.png
+Monofilament Tow Cable,omm_tow_cable,,,,,,,,TRUE,,0,0,0,0,tecrys.data.scripts.hullmods.omm_TowCable,"Improves the maximum burn level of the slowest ship in the fleet by 1. Up to 2 tugs can be used to speed up the same ship by up to 2.
+
+Can not be used in combat.",Increases burn level of another ship.,graphics/hullmods/omm_monofilament_cable.png
 ,,,,,,,,,,,,,,,,,,
 Synergy Pod AI,omm_synergypodai,,,,,,,,TRUE,TRUE,0,0,0,0,tecrys.data.fighters.synergy_pod.synergypodHullmod,Controls the AI for the Weapons drone,,
 Missile Pod AI,omm_missilepodai,,,,,,,,TRUE,TRUE,0,0,0,0,tecrys.data.fighters.missile_pod.missilepodHullmod,Controls the AI for the Weapons drone,,

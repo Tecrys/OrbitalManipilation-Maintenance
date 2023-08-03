@@ -124,21 +124,14 @@
 		"tags":["FreitagCorporation_pulse_bp"],
 		"hullMods":[
 			"advancedshieldemitter", # accelerated
-			"turretgyros",
-			"armoredweapons",
 			"augmentedengines",
 			"autorepair",
-			"converted_hangar",
 			"eccm",
 			"ecm",
-			"expanded_deck_crew",
-			"magazines",
-			"missleracks",
 			"extendedshieldemitter",
 			"frontemitter",
 			"frontshield",  # makeshift
 			"hardenedshieldemitter",
-			"heavyarmor",
 			"insulatedengine",
 			"targetingunit",
 			"nav_relay",
@@ -152,7 +145,6 @@
 			"efficiency_overhaul",
 			"escort_package",
 			"assault_package",
-			"converted_fighterbay",
 		],
 	},
 	"factionDoctrine":{
@@ -241,11 +233,11 @@
 	},
 	"ranks":{
 		"ranks":{
-			"factionLeader":{"name":"Secretary General"},
-			"spaceCommander":{"name":"Hostile Acquisition Manager"},
+			"factionLeader":{"name":"Secretary-General"},
+			"spaceCommander":{"name":"Forward Distributions Manager"},
 		},
 		"posts":{
-			"factionLeader":{"name":"Secretary General"},
+			"factionLeader":{"name":"Secretary-General"},
 
 		},
 	},
