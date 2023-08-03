@@ -14,6 +14,9 @@ import com.fs.starfarer.api.plugins.ShipSystemStatsScript;
 import com.fs.starfarer.api.util.Misc;
 import java.awt.Color;
 import java.util.List;
+import org.dark.shaders.distortion.DistortionAPI;
+import org.dark.shaders.distortion.DistortionShader;
+import org.dark.shaders.distortion.WaveDistortion;
 import org.lazywizard.lazylib.MathUtils;
 import org.lazywizard.lazylib.combat.AIUtils;
 import org.lwjgl.util.vector.Vector2f;
@@ -27,6 +30,7 @@ public class FreitagCorporation_TemporalShellBuff extends BaseShipSystemScript {
 
     public static final Color JITTER_COLOR = new Color(90, 165, 255, 55);
     public static final Color JITTER_UNDER_COLOR = new Color(90, 165, 255, 155);
+    
 
     public static float getRange(ShipAPI ship) {
         if (ship == null) {
@@ -114,7 +118,9 @@ public class FreitagCorporation_TemporalShellBuff extends BaseShipSystemScript {
         if (!ally.areSignificantEnemiesInRange()) {
             return false;
         }
-
+        if (ally.areSignificantEnemiesInRange()) {
+            return true;
+        }
         if ((hasFullAmmo && (player || ally.getAIFlags().hasFlag(AIFlags.PURSUING)))) {
             return true;
         }
@@ -251,7 +257,14 @@ public class FreitagCorporation_TemporalShellBuff extends BaseShipSystemScript {
                 float effectLevel = jitterLevel * jitterLevel;
 
                 jitterLevel = (float) Math.sqrt(jitterLevel);
-
+          float targetRadius = target.getShieldRadiusEvenIfNoShield();
+                          WaveDistortion wave = new WaveDistortion(target.getLocation(), target.getVelocity());
+          wave.setSize(targetRadius * 4.75F);
+          wave.setIntensity(targetRadius);
+          wave.setArcAttenuationWidth(150);
+          wave.fadeInSize(0.75F);
+          wave.fadeOutIntensity(0.5F);
+          DistortionShader.addDistortion((DistortionAPI)wave);
                 target.setJitter(this, JITTER_COLOR, jitterLevel, 3, 0, 0 + jitterRangeBonus);
                 target.setJitterUnder(this, JITTER_UNDER_COLOR, jitterLevel, 25, 0f, 7f + jitterRangeBonus);
 
