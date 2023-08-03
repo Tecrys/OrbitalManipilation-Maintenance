@@ -21,7 +21,11 @@
     "omm_pddrone_wing"
   ],
   "builtInWeapons": {
-    "MODULAR": "omm_pddronedeco"
+    "MODULAR": "omm_pddronedeco",
+    "leftblinkerfront": "omm_redblinker",
+    "leftblinkerrear": "omm_redblinker",
+    "rightblinkerfront": "omm_greenblinker",
+    "rightblinkerrear": "omm_greenblinker"
   },
   "weaponSlots": [
     {
@@ -53,6 +57,42 @@
         19, -31,
         18.5, 31.5
       ]
+    },
+    {
+      "id": "rightblinkerfront",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 180,
+      "locations": [112.5, -28.5]
+    },
+    {
+      "id": "leftblinkerfront",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": -180,
+      "locations": [112.5, 28.5]
+    },
+    {
+      "id": "rightblinkerrear",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 180,
+      "locations": [-115.5, -47.5]
+    },
+    {
+      "id": "leftblinkerrear",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": -180,
+      "locations": [-115.5, 47.5]
     }
   ],
   "engineSlots": [

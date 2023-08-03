@@ -23,10 +23,12 @@
   "builtInWeapons": {
     "MODULARPD": "omm_pddronedeco",
     "leftarm": "omm_limnopilos_left_leg",
+    "leftblinker": "omm_redblinker",
     "leftcover": "omm_limnopilos_left_cover",
     "leftjaw": "omm_limnopilos_left_jaw",
     "leftleg": "omm_limnopilos_left_leg",
     "rightarm": "omm_limnopilos_right_leg",
+    "rightblinker": "omm_greenblinker",
     "rightcover": "omm_limnopilos_right_cover",
     "rightjaw": "omm_limnopilos_right_jaw",
     "rightleg": "omm_limnopilos_right_leg",
@@ -151,6 +153,26 @@
       "arc": 360,
       "angle": 0,
       "locations": [-14.5, -0]
+    },
+    {
+      "id": "rightblinker",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [41, -38],
+      "renderOrderMod": 20
+    },
+    {
+      "id": "leftblinker",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [41, 38],
+      "renderOrderMod": 20
     }
   ],
   "engineSlots": [

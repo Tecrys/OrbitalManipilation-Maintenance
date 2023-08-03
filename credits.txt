@@ -6,6 +6,8 @@ Coding: Snrasha, briansd9, tomatopaste, DeCell
 
 Original drone weapon swap code from Arma Armatura by Shoi
 
+Drone positioning/PID controller code originally made by ruddygreat
+
 Fighters transfer flux to mothership code from Modern Carriers by Sutopia
 
 Proofreading Finn

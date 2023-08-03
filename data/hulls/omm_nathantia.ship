@@ -34,9 +34,13 @@
     "WS0001": "omm_ballisticpoddeco",
     "frontcover": "omm_nathantia_frontcover",
     "leftarm": "omm_nathantia_left_arm",
+    "leftblinkerfront": "omm_redblinker",
+    "leftblinkerrear": "omm_redblinker",
     "leftcover": "omm_nathantia_left_cover",
     "leftleg": "omm_nathantia_left_leg",
     "rightarm": "omm_nathantia_right_arm",
+    "rightblinkerfront": "omm_greenblinker",
+    "rightblinkerrear": "omm_greenblinker",
     "rightcover": "omm_nathantia_right_cover",
     "rightleg": "omm_nathantia_right_leg",
     "shield": "FreitagCorporation_ShieldEffect_wpn"
@@ -222,6 +226,44 @@
       "arc": 1,
       "angle": -0,
       "locations": [161.5, -0]
+    },
+    {
+      "id": "rightblinkerrear",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 10,
+      "angle": -1,
+      "locations": [-52.5, -254]
+    },
+    {
+      "id": "leftblinkerrear",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 10,
+      "angle": 1,
+      "locations": [-52.5, 254]
+    },
+    {
+      "id": "rightblinkerfront",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 10,
+      "angle": -1,
+      "locations": [140.5, -38],
+      "renderOrderMod": 30
+    },
+    {
+      "id": "leftblinkerfront",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 10,
+      "angle": 1,
+      "locations": [140.5, 38],
+      "renderOrderMod": 30
     }
   ],
   "engineSlots": [

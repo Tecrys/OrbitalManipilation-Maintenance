@@ -1,7 +1,7 @@
 {
   "id": "omm_greenblinker",
   "specClass": "beam",
-  "type": "ENERGY",
+  "type": "DECORATIVE",
   "size": "SMALL",
   "everyFrameEffect":"com.fs.starfarer.api.impl.combat.BlinkerEffect",
   "collisionClass": "RAY",
