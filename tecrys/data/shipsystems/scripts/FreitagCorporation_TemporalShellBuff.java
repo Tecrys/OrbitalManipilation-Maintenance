@@ -259,8 +259,8 @@ public class FreitagCorporation_TemporalShellBuff extends BaseShipSystemScript {
                 jitterLevel = (float) Math.sqrt(jitterLevel);
           float targetRadius = target.getShieldRadiusEvenIfNoShield();
                           WaveDistortion wave = new WaveDistortion(target.getLocation(), target.getVelocity());
-          wave.setSize(targetRadius * 4.75F);
-          wave.setIntensity(targetRadius);
+          wave.setSize(targetRadius * 3.5F);
+          wave.setIntensity(targetRadius*2);
           wave.setArcAttenuationWidth(150);
           wave.fadeInSize(0.75F);
           wave.fadeOutIntensity(0.5F);
