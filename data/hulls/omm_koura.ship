@@ -12,63 +12,65 @@
   "shieldRadius": 0,
   "viewOffset": 0,
   "builtInMods": [
-    "ex_phase_coils",
-    "stealth_minefield",
-    "phase_anchor"
+    "omm_mainframelink",
+    "ex_phase_coils"
+  ],
+  "builtInWings": [
+    "omm_synergypod_wing",
+    "omm_synergypod_wing",
+    "omm_smallpod_wing",
+    "omm_smallpod_wing"
   ],
   "builtInWeapons": {
-    "WSDeco": "omm_kouradeco",
-    "WSFrontLeft": "cryoflux",
-    "WSFrontRight": "cryoflux"
+      "AIHelp": "omm_chafflauncher",
+    "MODULAR": "omm_synergypoddeco",
+    "MODULARPD": "omm_smallpoddeco"
   },
   "weaponSlots": [
     {
-      "id": "WSFrontRight",
-      "size": "MEDIUM",
-      "type": "BUILT_IN",
-      "mount": "HARDPOINT",
-      "arc": 2,
-      "angle": 2,
-      "locations": [14, -29]
-    },
-    {
-      "id": "WSFrontLeft",
-      "size": "MEDIUM",
-      "type": "BUILT_IN",
-      "mount": "HARDPOINT",
-      "arc": 2,
-      "angle": -2,
-      "locations": [14, 29]
-    },
-    {
-      "id": "WSDeco",
+      "id": "MODULAR",
       "size": "SMALL",
       "type": "DECORATIVE",
       "mount": "TURRET",
       "arc": 0,
       "angle": 0,
-      "locations": [-14, -0],
-      "renderOrderMod": 10
+      "locations": [-50, 131]
     },
     {
-      "id": "WSRearLeft",
-      "size": "MEDIUM",
-      "type": "UNIVERSAL",
+      "id": "MODULARPD",
+      "size": "SMALL",
+      "type": "DECORATIVE",
       "mount": "TURRET",
-      "arc": 45,
-      "angle": -2,
-      "locations": [-17, 18],
-      "renderOrderMod": 11
+      "arc": 0,
+      "angle": 0,
+      "locations": [39, 137]
     },
     {
-      "id": "WSRearRight",
-      "size": "MEDIUM",
-      "type": "UNIVERSAL",
+      "id": "smlhybridslot",
+      "size": "SMALL",
+      "type": "HYBRID",
       "mount": "TURRET",
-      "arc": 45,
-      "angle": 2,
-      "locations": [-17, -18],
-      "renderOrderMod": 11
+      "arc": 0,
+      "angle": 0,
+      "locations": [45.5, 103]
+    },
+    {
+      "id": "synergyslot",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-34, 103]
+    },
+    {
+      "id": "AIHelp",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [24, -0]
     }
   ],
   "engineSlots": [

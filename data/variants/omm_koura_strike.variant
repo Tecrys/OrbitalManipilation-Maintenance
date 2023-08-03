@@ -1,10 +1,10 @@
 {
-  "variantId": "omm_koura_Standard",
+  "variantId": "omm_koura_strike",
   "hullId": "omm_koura",
-  "displayName": "Standard",
+  "displayName": "Strike",
   "goalVariant": false,
-  "fluxCapacitors": 10,
-  "fluxVents": 10,
+  "fluxCapacitors": 8,
+  "fluxVents": 8,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
@@ -15,8 +15,8 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "smlhybridslot": "lightneedler",
-        "synergyslot": "shredder"
+        "smlhybridslot": "amblaster",
+        "synergyslot": "phasebeam"
       }
     },
     {

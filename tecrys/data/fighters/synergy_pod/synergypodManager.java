@@ -29,7 +29,7 @@ public class synergypodManager implements AdvanceableListener {
             }
         }
     }
-
+    
     float angleFromBasepos = 130f;
     float distBetweenClusters = 140f;
     float distFromClusterCenterToDrone = 30f;
@@ -48,6 +48,12 @@ public class synergypodManager implements AdvanceableListener {
         int oddOrEvenNoOfWings = relevantWings.size() % 2;
         float anglebetweenDrones = 360f / drone.getWing().getSpec().getNumFighters();
 
+        
+        if (mothership.getHullSpec().getHullId().equals("omm_koura")){
+                angleFromBasepos = 42f;
+                distBetweenClusters = 62f;
+                distFromClusterCenterToDrone = 30f;
+        }
         //todo better idea for defensive formation?
         if (mothership.isPullBackFighters()) {//defensive formation
             Vector2f basePos = MathUtils.getPointOnCircumference(mothership.getShieldCenterEvenIfNoShield(), mothership.getShieldRadiusEvenIfNoShield(), mothership.getFacing());
