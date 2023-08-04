@@ -42,24 +42,21 @@
 	"shipsWhenImporting":{
 		"tags":["FreitagCorporation_pulse_bp"],
 		"hulls":[
-			"atlas",
-			"phaeton",
-			"dram",
+
 		],
 	},
 	"knownShips":{
 		"tags":["FreitagCorporation_pulse_bp"],
 		"hulls":[
-			"atlas",
-			"dram",
             "omm_crevette",
             "omm_ecrevisse",
             "omm_sandhopper",
             "omm_euphausia",
             "omm_nathantia",
             "omm_sesarma",
+			"omm_macrocheira",
             "omm_limnopilos",
-			"phaeton",
+			"omm_koura",
 		],
 	},
 	# listing ships here will make the faction mostly use them even if other hulls become available
@@ -72,7 +69,9 @@
             "omm_euphausia",
             "omm_nathantia",
             "omm_sesarma",
+			"omm_macrocheira",
             "omm_limnopilos",
+			"omm_koura",
 		],
 	},
 	"knownFighters":{
@@ -148,8 +147,8 @@
 		],
 	},
 	"factionDoctrine":{
-		"warships":2,
-		"carriers":2,
+		"warships":4,
+		"carriers":0,
 		"phaseShips":1,
 		
 		"officerQuality":3,

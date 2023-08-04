@@ -40,7 +40,7 @@ public class FreitagHQ {
                         "freitag_submarket",
                         "freitag_military",//add a default open market
                         Submarkets.SUBMARKET_STORAGE, //add a player storage market
-                        Submarkets.SUBMARKET_BLACK //add a black market
+                        "omm_black_market" //add a black market
                 )),
                 new ArrayList<>(Arrays.asList( //list of industries for this method to iterate through and add to the market
                         Industries.POPULATION, //population industry is required for weirdness to not happen
