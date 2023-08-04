@@ -22,6 +22,7 @@
   ],
   "builtInWeapons": {
     "MODULARPD": "omm_pddronedeco",
+    "algaepods": "omm_limnopilos_algaepod",
     "leftarm": "omm_limnopilos_left_leg",
     "leftblinker": "omm_redblinker",
     "leftcover": "omm_limnopilos_left_cover",
@@ -143,7 +144,7 @@
       "mount": "TURRET",
       "arc": 0,
       "angle": -0,
-      "locations": [-11, -0]
+      "locations": [-62.5, -0]
     },
     {
       "id": "LB 1",

@@ -5,6 +5,7 @@ import com.fs.starfarer.api.combat.BaseHullMod;
 import com.fs.starfarer.api.combat.MutableShipStatsAPI;
 import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.combat.ShipAPI.HullSize;
+import com.fs.starfarer.api.combat.WeaponAPI;
 import com.fs.starfarer.api.fleet.FleetMemberAPI;
 import com.fs.starfarer.api.impl.PlayerFleetPersonnelTracker;
 import com.fs.starfarer.api.impl.hullmods.MilitarizedSubsystems;
@@ -62,7 +63,18 @@ public class omm_algaefarm extends BaseHullMod {
         return null;
 
     }
-
+    public void advanceInCombat(ShipAPI ship, float amount) {
+        java.util.List<WeaponAPI> decos = ship.getAllWeapons();
+        for (WeaponAPI deco : decos) {
+            if (deco.getSlot().getId().equals("algaepods")) {
+                if (ship.getOriginalOwner() == -1) {
+                    deco.getAnimation().setFrame(00);
+                } else {
+                    deco.getAnimation().setFrame(01);
+                }
+            }
+        }
+    }
     //Oh these are cool colors below introduced in 0.95a, to match with your tech type and stuff. Just nice to have!
     public Color getBorderColor() {
         return new Color(255, 255, 255, 100);

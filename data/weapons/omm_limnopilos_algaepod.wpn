@@ -6,8 +6,11 @@
   "showDamageWhenDecorative":true,
   "collisionClass": "RAY",
   "collisionClassByFighter": "RAY_FIGHTER",
-  "turretSprite": "graphics/ships/Limnopilos/omm_limnopilos_pods.png",
-  "hardpointSprite": "",
+  "turretSprite": "graphics/ships/Limnopilos/omm_limnopilos_pods00.png",
+  "hardpointSprite": "graphics/ships/Limnopilos/omm_limnopilos_pods00.png",
+      	"numFrames":2,
+	"frameRate":0,
+	"alwaysAnimate":"false",
   "glowColor": [
     255,
     255,
