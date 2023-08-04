@@ -5,8 +5,10 @@
   "size": "SMALL",
   "collisionClass": "RAY",
   "collisionClassByFighter": "RAY_FIGHTER",
-  "turretSprite": "graphics/ships/Macrocheira/omm_macrocheira_hand_right00.png",
-  "hardpointSprite": "",
+  "turretSprite": "graphics/ships/Macrocheira/hands/omm_macrocheira_hand_right00.png",
+  "hardpointSprite": "graphics/ships/Macrocheira/hands/omm_macrocheira_hand_right00.png",
+        	"numFrames":9,
+	"frameRate":0,
   "glowColor": [
     255,
     255,
