@@ -118,6 +118,15 @@ This particular drone model has a large hybrid hardpoint.",,,
 FreitagCorporation_ShieldDrone,SHIP,"Shield drones are deployed by several Freitag Corporation vessels to protect the mothership from debris, asteroid fragments or enemy ordnance. 
 The experience would be too traumatizing for humans to be controlled remotely via the companies trademark wireless consciousness shift and thus the drones have to rely on a crude theta level AI. This is the highest grade AI level permitted on civilian grade ships after the events of the second AI war and unfortunately drone performance is noticably limited by that.",,,
 omm_algaepod,SHIP,A cluster of algae pods deployed during combat by Limnopilos.,,,
+omm_koura,SHIP,"Freitag Corporation's main product line always relied on civilian grade equipment, superior salvage vessels and orbital construction but in recent years demand for military grade products skyrocketed. 
+Due to a lack of technological know-how in the field of armaments and armour Research and Development department opted to instead rely on phase technology, in which the corporation has some previous experience, albeit in the form of multi-purpose manipulators already used on most ships currently in production.
+
+The Koura class was designed as a testbed for Freitag Corporations extraordinary kappa-level AI supported drone controller in conjunction with experimental phase technology.
+Despite test subjects connected to the VR drone system having difficulty with time dilation caused by entering p-space the experiment was judged successful.
+
+Data recorded during tests showed that the time dilation could be used to collect targeting data more quickly in order to attack weak spots on opponents.
+
+The design has been rushed into production to bolster sales without even removing its testbed status.",,,
 ,,,,,
 omm_octocorallia,SHIP,Automated Defense platform deployed by the Sandhopper-class. Is automatically deployed if within 300 SU of a capture point or 30 seconds after combat has started.,,,
 ,,,,,

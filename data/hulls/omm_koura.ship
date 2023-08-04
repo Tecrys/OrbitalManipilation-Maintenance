@@ -22,7 +22,7 @@
     "omm_smallpod_wing"
   ],
   "builtInWeapons": {
-      "AIHelp": "omm_chafflauncher",
+    "AIHelp": "omm_chafflauncher",
     "MODULAR": "omm_synergypoddeco",
     "MODULARPD": "omm_smallpoddeco"
   },
@@ -57,7 +57,7 @@
     {
       "id": "synergyslot",
       "size": "MEDIUM",
-      "type": "HYBRID",
+      "type": "UNIVERSAL",
       "mount": "TURRET",
       "arc": 0,
       "angle": 0,
