@@ -15,27 +15,28 @@
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "lefthook": "minelayer2",
-        "pdslot": "lrpdlaser",
-        "smlhybridslot": "mininglaser"
-      }
-    },
-    {
-      "autofire": false,
-      "mode": "LINKED",
-      "weapons": {
         "righthook": "jackhammer"
       }
     },
     {
       "autofire": false,
       "mode": "LINKED",
-      "weapons": {}
+      "weapons": {
+        "lefthook": "minelayer2"
+      }
     },
     {
       "autofire": false,
       "mode": "LINKED",
       "weapons": {}
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "pdslot": "lrpdlaser",
+        "smlhybridslot": "mininglaser"
+      }
     },
     {
       "autofire": false,

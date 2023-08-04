@@ -22,6 +22,7 @@
   ],
   "builtInWeapons": {
     "MODULAR": "omm_pddronedeco",
+    "SesarmaDeco": "omm_sesarma_deco",
     "leftblinkerfront": "omm_redblinker",
     "leftblinkerrear": "omm_redblinker",
     "rightblinkerfront": "omm_greenblinker",
@@ -65,7 +66,8 @@
       "mount": "TURRET",
       "arc": 360,
       "angle": 180,
-      "locations": [109.5, -28.5]
+      "locations": [109.5, -28.5],
+      "renderOrderMod": 30
     },
     {
       "id": "leftblinkerfront",
@@ -74,7 +76,8 @@
       "mount": "TURRET",
       "arc": 360,
       "angle": -180,
-      "locations": [109.5, 28.5]
+      "locations": [109.5, 28.5],
+      "renderOrderMod": 30
     },
     {
       "id": "rightblinkerrear",
@@ -83,7 +86,8 @@
       "mount": "TURRET",
       "arc": 360,
       "angle": 180,
-      "locations": [-118.5, -47.5]
+      "locations": [-118.5, -47.5],
+      "renderOrderMod": 30
     },
     {
       "id": "leftblinkerrear",
@@ -92,7 +96,17 @@
       "mount": "TURRET",
       "arc": 360,
       "angle": -180,
-      "locations": [-118.5, 47.5]
+      "locations": [-118.5, 47.5],
+      "renderOrderMod": 30
+    },
+    {
+      "id": "SesarmaDeco",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [11, -0]
     }
   ],
   "engineSlots": [

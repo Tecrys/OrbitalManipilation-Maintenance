@@ -2,9 +2,12 @@ package tecrys.data.scripts.hullmods;
 
 import com.fs.starfarer.api.combat.BaseHullMod;
 import com.fs.starfarer.api.combat.MutableShipStatsAPI;
+import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.combat.ShipAPI.HullSize;
+import com.fs.starfarer.api.combat.WeaponAPI;
 import com.fs.starfarer.api.impl.campaign.ids.HullMods;
 import com.fs.starfarer.api.impl.campaign.ids.Stats;
+import java.util.List;
 
 public class FreitagCorporation_Storage extends BaseHullMod {
 
@@ -29,7 +32,24 @@ public class FreitagCorporation_Storage extends BaseHullMod {
         }
 
     }
-
+  public void applyEffectsAfterShipCreation(ShipAPI ship, String id) {
+                List<WeaponAPI> decos = ship.getAllWeapons();
+                                for (WeaponAPI deco : decos) {
+                    if (deco.getSlot().getId().equals("SesarmaDeco")) {
+                                if (ship.getVariant() != null) {
+                        if (ship.getVariant().hasHullMod(HullMods.AUXILIARY_FUEL_TANKS)){
+                           deco.getAnimation().setFrame(01); 
+                        }
+                                                                        if (ship.getVariant().hasHullMod(HullMods.ADDITIONAL_BERTHING)){
+                           deco.getAnimation().setFrame(02); 
+                        }
+                                                if (ship.getVariant().hasHullMod(HullMods.EXPANDED_CARGO_HOLDS)){
+                           deco.getAnimation().setFrame(03); 
+                        }
+                        }
+                                }
+                    }
+                                }
     public String getDescriptionParam(int index, HullSize hullSize) {
         if (index == 0) {
             return "" + ((Float) STORAGE_AUXILIARY_FUEL_TANKS).intValue();
