@@ -22,10 +22,10 @@ public class FreitagHQ {
         customCampaignEntityAPI1.setCircularOrbitPointingDown(valhalla.getEntityById("Valhalla"), 220.0F, 3350F, 100.0F);
         customCampaignEntityAPI1.setCustomDescriptionId("salvage_gate");
 
-        CustomCampaignEntityAPI customCampaignEntityAPI2 = valhalla.addCustomEntity("freitag_hq", "Freitag Corporation HQ", "freitag_hq", "independent");
+        CustomCampaignEntityAPI customCampaignEntityAPI2 = valhalla.addCustomEntity("freitag_hq", "Freitag Corporation HQ", "freitag_hq", "freitag_corporation");
         customCampaignEntityAPI2.setCircularOrbit(valhalla.getEntityById("valhalla_salvage_gate"), 90, 35, 30);
         customCampaignEntityAPI2.setCustomDescriptionId("freitag_hq");
-        MarketAPI HQmarket = omm_AddMarketplace.addMarketplace("independent", (SectorEntityToken) customCampaignEntityAPI2, null, "Freitag Corporation HQ", 4, new ArrayList<>(Arrays.asList( //List of conditions for this method to iterate through and add to the market
+        MarketAPI HQmarket = omm_AddMarketplace.addMarketplace("freitag_corporation", (SectorEntityToken) customCampaignEntityAPI2, null, "Freitag Corporation HQ", 4, new ArrayList<>(Arrays.asList( //List of conditions for this method to iterate through and add to the market
                 Conditions.INDUSTRIAL_POLITY,
                 Conditions.POPULATION_3,
                 Conditions.RARE_ORE_ABUNDANT,

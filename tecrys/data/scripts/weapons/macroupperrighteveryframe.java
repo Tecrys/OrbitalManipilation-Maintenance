@@ -35,22 +35,24 @@ public class macroupperrighteveryframe implements EveryFrameWeaponEffectPlugin {
         WeaponAPI hand = null;
 
         for (WeaponAPI w : ship.getAllWeapons()) {
-            if (w.getSlot().getId().equals("WS0011")) {
+            if (w.getSlot().getId().equals("omm_macro_shoulder_right")) {
                 arm = w;
             }
 
-            if (w.getSlot().getId().equals("WS0013")) {
+            if (w.getSlot().getId().equals("omm_macro_arm_right")) {
                 forearm = w;
             }
 
-            if (w.getSlot().getId().equals("WS0015")) {
+            if (w.getSlot().getId().equals("omm_macro_hand_right")) {
                 hand = w;
             }
         }
-
+        if (ship.isHulk() || !ship.isAlive()){
+            return;
+        }
         interval.advance(amount);
 
-        if(interval.intervalElapsed()) {
+        if(interval.intervalElapsed() && arm.getSlot() != null && forearm.getSlot() != null && hand.getSlot() != null) {
             Vector2f targloc = null;
 
             Vector2f armabsloc = VectorUtils.rotateAroundPivot(new Vector2f(arm.getSlot().getLocation().getX() + ship.getLocation().getX(), arm.getSlot().getLocation().getY() + ship.getLocation().getY()), ship.getLocation(), ship.getFacing());
@@ -83,7 +85,7 @@ public class macroupperrighteveryframe implements EveryFrameWeaponEffectPlugin {
             if(targloc == null) {
                 if (arm != null) {
 
-                    float dangle = (3600f + 49.5f + ship.getFacing()) % 360f;
+                    float dangle = (3600f - 49.5f + ship.getFacing()) % 360f;
                     float currangle = (3600f + arm.getCurrAngle()) % 360f;
 
                     if (MathUtils.getShortestRotation(currangle + 3f, dangle) > 0f) {
@@ -97,7 +99,7 @@ public class macroupperrighteveryframe implements EveryFrameWeaponEffectPlugin {
                 if (forearm != null) {
                     forearm.getSlot().getLocation().set(VectorUtils.rotateAroundPivot(new Vector2f(arm.getSlot().getLocation().getX() + 110f, arm.getSlot().getLocation().getY()), arm.getSlot().getLocation(), arm.getCurrAngle() - ship.getFacing()));
 
-                    float dangle = (3600f - 22.5f + ship.getFacing()) % 360f;
+                    float dangle = (3600f + 22.5f + ship.getFacing()) % 360f;
                     float currangle = (3600f + forearm.getCurrAngle()) % 360f;
 
                     if (MathUtils.getShortestRotation(currangle + 3f, dangle) > 0f) {

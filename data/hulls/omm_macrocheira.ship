@@ -31,12 +31,12 @@
     "WS0007": "omm_macrocheira_right_hand",
     "WS0008": "omm_macrocheira_left_hand",
     "WS0009": "omm_macrocheira_algae_pods",
-    "WS0010": "omm_macrocheira_left_upper_arm2",
-    "WS0011": "omm_macrocheira_right_upper_arm2",
-    "WS0012": "omm_macrocheira_left_lower_arm2",
-    "WS0013": "omm_macrocheira_right_lower_arm2",
-    "WS0014": "omm_macrocheira_left_hand2",
-    "WS0015": "omm_macrocheira_right_hand2",
+    "omm_macro_arm_left": "omm_macrocheira_left_lower_arm2",
+    "omm_macro_arm_right": "omm_macrocheira_right_lower_arm2",
+    "omm_macro_hand_left": "omm_macrocheira_left_hand2",
+    "omm_macro_hand_right": "omm_macrocheira_right_hand2",
+    "omm_macro_shoulder_left": "omm_macrocheira_left_upper_arm2",
+    "omm_macro_shoulder_right": "omm_macrocheira_right_upper_arm2",
     "shield": "FreitagCorporation_ShieldEffect_wpn"
   },
   "weaponSlots": [
@@ -165,7 +165,7 @@
       "renderOrderMod": 100
     },
     {
-      "id": "WS0010",
+      "id": "omm_macro_shoulder_left",
       "size": "SMALL",
       "type": "DECORATIVE",
       "mount": "TURRET",
@@ -175,17 +175,17 @@
       "renderOrderMod": 10
     },
     {
-      "id": "WS0011",
+      "id": "omm_macro_shoulder_right",
       "size": "SMALL",
       "type": "DECORATIVE",
       "mount": "TURRET",
-      "arc": 0,
+      "arc": 360,
       "angle": -49.5,
       "locations": [-42, -46.5],
       "renderOrderMod": 10
     },
     {
-      "id": "WS0012",
+      "id": "omm_macro_arm_left",
       "size": "SMALL",
       "type": "DECORATIVE",
       "mount": "TURRET",
@@ -195,17 +195,17 @@
       "renderOrderMod": 15
     },
     {
-      "id": "WS0013",
+      "id": "omm_macro_arm_right",
       "size": "SMALL",
       "type": "DECORATIVE",
       "mount": "TURRET",
-      "arc": 0,
+      "arc": 360,
       "angle": 22.5,
       "locations": [28, -127],
       "renderOrderMod": 15
     },
     {
-      "id": "WS0014",
+      "id": "omm_macro_hand_left",
       "size": "SMALL",
       "type": "DECORATIVE",
       "mount": "TURRET",
@@ -215,11 +215,11 @@
       "renderOrderMod": 80
     },
     {
-      "id": "WS0015",
+      "id": "omm_macro_hand_right",
       "size": "SMALL",
       "type": "DECORATIVE",
       "mount": "TURRET",
-      "arc": 0,
+      "arc": 360,
       "angle": 55.5,
       "locations": [134.5, -81],
       "renderOrderMod": 80

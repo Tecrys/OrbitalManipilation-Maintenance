@@ -35,22 +35,25 @@ public class macroupperlefteveryframe implements EveryFrameWeaponEffectPlugin {
         WeaponAPI hand = null;
 
         for (WeaponAPI w : ship.getAllWeapons()) {
-            if (w.getSlot().getId().equals("WS0010")) {
+            if (w.getSlot().getId().equals("omm_macro_shoulder_left")) {
                 arm = w;
             }
 
-            if (w.getSlot().getId().equals("WS0012")) {
+            if (w.getSlot().getId().equals("omm_macro_arm_left")) {
                 forearm = w;
             }
 
-            if (w.getSlot().getId().equals("WS0014")) {
+            if (w.getSlot().getId().equals("omm_macro_hand_left")) {
                 hand = w;
             }
         }
-
+        if (ship.isHulk() || !ship.isAlive()){
+            return;
+        }
+            
         interval.advance(amount);
 
-        if(interval.intervalElapsed()) {
+        if(interval.intervalElapsed() && arm.getSlot() != null && forearm.getSlot() != null && hand.getSlot() != null) {
             Vector2f targloc = null;
 
             Vector2f armabsloc = VectorUtils.rotateAroundPivot(new Vector2f(arm.getSlot().getLocation().getX() + ship.getLocation().getX(), arm.getSlot().getLocation().getY() + ship.getLocation().getY()), ship.getLocation(), ship.getFacing());
@@ -181,6 +184,7 @@ if(missiletarget != null){
             }
             }
         }
+    
     }
 }
 
