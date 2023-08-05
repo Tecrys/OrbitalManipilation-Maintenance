@@ -9,11 +9,14 @@ import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.combat.ShipCommand;
 import com.fs.starfarer.api.combat.ShipVariantAPI;
 import com.fs.starfarer.api.combat.WeaponAPI;
+import static com.fs.starfarer.api.combat.WeaponAPI.AIHints.STRIKE;
+import static com.fs.starfarer.api.combat.WeaponAPI.WeaponType.MISSILE;
 import com.fs.starfarer.api.combat.WeaponGroupAPI;
 import com.fs.starfarer.api.util.IntervalUtil;
 import java.util.List;
 import org.lazywizard.lazylib.MathUtils;
 import org.lazywizard.lazylib.VectorUtils;
+import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
 import org.lwjgl.util.vector.Vector2f;
 
@@ -62,7 +65,7 @@ public class omm_synergypod implements EveryFrameWeaponEffectPlugin {
                         diffdrone = MathUtils.clamp(diffdrone, -maxVeldrone, maxVeldrone);
                         FIGHTER.setFacing(diffdrone + FIGHTER.getFacing());        //sets facing of the drone
 
- 
+                        
                         
                         ShipAPI player = Global.getCombatEngine().getPlayerShip();
                         {if (player == this.SHIP && !this.FIGHTER.isLanding() && !this.FIGHTER.isLiftingOff() && dronewep.getSlot().getId().equals("omm_laser")) {
@@ -71,8 +74,13 @@ public class omm_synergypod implements EveryFrameWeaponEffectPlugin {
 
                         }
        }
-                        if (Mouse.isButtonDown(0) && !player.getFluxTracker().isOverloadedOrVenting()) {
-                            this.FIGHTER.giveCommand(ShipCommand.FIRE, mousepos, 0);           //clicky left drone shooty
+                        if (dronewep.getSlot().getId().equals("synergyslot")) {
+                            if (Mouse.isButtonDown(0) && !player.getFluxTracker().isOverloadedOrVenting() && (dronewep.getType() != MISSILE)) {
+                                this.FIGHTER.giveCommand(ShipCommand.FIRE, mousepos, 0);           //clicky left drone shooty
+                            }
+                            if (Mouse.isButtonDown(2) && !player.getFluxTracker().isOverloadedOrVenting() && (dronewep.getType() == MISSILE)) {
+                                this.FIGHTER.giveCommand(ShipCommand.FIRE, mousepos, 0);           //clicky left drone shooty
+                            }
                         }
                         if (player != this.SHIP) {
                             for (WeaponGroupAPI group : FIGHTER.getWeaponGroupsCopy()){

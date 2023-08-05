@@ -6,7 +6,7 @@ Mainframe Uplink,omm_mainframelink,,,,,,,,TRUE,,0,0,0,0,tecrys.data.scripts.hull
 
 If chosen as flagship the captain is able to control all drones manually similar to normal weapon mounts. 
 
-Unfortunately no weapon groups can be set up and all drones will fire simultaniously.",Drone equipment and data interface.,graphics/hullmods/DroneHullmod.png
+Unfortunately no weapon groups can be set up. Missiles are fired by middle mouse button, all other weapons on left click.",Drone equipment and data interface.,graphics/hullmods/DroneHullmod.png
 Mobile Algae Farm,omm_algaefarm,,,,,,,,TRUE,,0,0,0,0,tecrys.data.scripts.hullmods.omm_algaefarm,Pods of condensed algae flourish due to the abundance of ambient solar radiation. Produces 2/4/6/8 supplies and 3/6/9/12 fuel every day.,,graphics/hullmods/omm_algae_hullmod.png
 no missile reload,omm_no_missile_reload,,,,,,,,,TRUE,0,0,0,0,tecrys.data.scripts.hullmods.omm_no_missile_reload,,,graphics/hullmods/DroneHullmod.png
 Factory Limiter Override,omm_factory_override,,,Freitag Corporation,no_build_in,,,,TRUE,,0,0,0,0,tecrys.data.scripts.hullmods.omm_factory_override,"The crew has access to the codes necessary to override the factory limiter software installed on civilian grade ships produced by the Freitag Corporation, effectively doubling all positive effects of Militarized Subsystems, Assault Package and Escort Package. The fact that they are able to remove such limiters on ships produced by other manufacturers has gained them the allegation of industrial espionage but could not be proven so far.",,graphics/hullmods/limiter_override.png

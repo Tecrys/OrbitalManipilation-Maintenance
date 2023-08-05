@@ -9,6 +9,7 @@ import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.combat.ShipCommand;
 import com.fs.starfarer.api.combat.ShipVariantAPI;
 import com.fs.starfarer.api.combat.WeaponAPI;
+import static com.fs.starfarer.api.combat.WeaponAPI.WeaponType.MISSILE;
 import com.fs.starfarer.api.combat.WeaponGroupAPI;
 import com.fs.starfarer.api.util.IntervalUtil;
 import java.util.List;
@@ -73,8 +74,13 @@ public class omm_compositepod implements EveryFrameWeaponEffectPlugin {
 
                         }
 }
-                        if (Mouse.isButtonDown(0) && !player.getFluxTracker().isOverloadedOrVenting()) {
-                            this.FIGHTER.giveCommand(ShipCommand.FIRE, mousepos, 0);           //clicky left drone shooty
+                        if (dronewep.getSlot().getId().equals("compositeslot")) {
+                            if (Mouse.isButtonDown(0) && !player.getFluxTracker().isOverloadedOrVenting() && (dronewep.getType() != MISSILE)) {
+                                this.FIGHTER.giveCommand(ShipCommand.FIRE, mousepos, 0);           //clicky left drone shooty
+                            }
+                            if (Mouse.isButtonDown(2) && !player.getFluxTracker().isOverloadedOrVenting() && (dronewep.getType() == MISSILE)) {
+                                this.FIGHTER.giveCommand(ShipCommand.FIRE, mousepos, 0);           //clicky left drone shooty
+                            }
                         }
                         if (player != this.SHIP) {
                             for (WeaponGroupAPI group : FIGHTER.getWeaponGroupsCopy()){
