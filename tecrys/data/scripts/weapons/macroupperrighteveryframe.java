@@ -10,7 +10,7 @@ import org.lwjgl.util.vector.Vector2f;
 
 import java.awt.*;
 
-public class macroupperlefteveryframe implements EveryFrameWeaponEffectPlugin {
+public class macroupperrighteveryframe implements EveryFrameWeaponEffectPlugin {
 
     float index = 0f;
     IntervalUtil interval = new IntervalUtil(0.01f, 0.01f);
@@ -18,7 +18,7 @@ public class macroupperlefteveryframe implements EveryFrameWeaponEffectPlugin {
     MissileAPI missiletarget = null;
     int grabindex = 0;
 
-    private static org.apache.log4j.Logger log = Global.getLogger(macroupperlefteveryframe.class);
+    private static org.apache.log4j.Logger log = Global.getLogger(macroupperrighteveryframe.class);
 
     @Override
     public void advance(float amount, CombatEngineAPI engine, WeaponAPI weapon) {
@@ -35,15 +35,15 @@ public class macroupperlefteveryframe implements EveryFrameWeaponEffectPlugin {
         WeaponAPI hand = null;
 
         for (WeaponAPI w : ship.getAllWeapons()) {
-            if (w.getSlot().getId().equals("WS0010")) {
+            if (w.getSlot().getId().equals("WS0011")) {
                 arm = w;
             }
 
-            if (w.getSlot().getId().equals("WS0012")) {
+            if (w.getSlot().getId().equals("WS0013")) {
                 forearm = w;
             }
 
-            if (w.getSlot().getId().equals("WS0014")) {
+            if (w.getSlot().getId().equals("WS0015")) {
                 hand = w;
             }
         }
