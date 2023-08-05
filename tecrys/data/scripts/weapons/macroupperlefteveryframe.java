@@ -142,7 +142,7 @@ public class macroupperlefteveryframe implements EveryFrameWeaponEffectPlugin {
                 hand.getSlot().getLocation().set(VectorUtils.rotateAroundPivot(new Vector2f(forearm.getSlot().getLocation().getX() + 110f, forearm.getSlot().getLocation().getY() - 4f), forearm.getSlot().getLocation(), forearm.getCurrAngle() - ship.getFacing()));
 
                 Vector2f slotabsloc = VectorUtils.rotateAroundPivot(new Vector2f(hand.getSlot().getLocation().getX() + ship.getLocation().getX(), hand.getSlot().getLocation().getY() + ship.getLocation().getY()), ship.getLocation(), ship.getFacing());
-
+if(target != null){
                 if(MathUtils.getDistance(slotabsloc,target.getLocation())<10f){
                     while (target.getHullLevel()>0){
                         engine.applyDamage(target, target.getLocation(), 100f, DamageType.FRAGMENTATION, 0, true, false, ship);
@@ -155,6 +155,7 @@ public class macroupperlefteveryframe implements EveryFrameWeaponEffectPlugin {
                 //float offset = 0f;
 
                 hand.setCurrAngle(forearm.getCurrAngle());
+            }
             }
         }
     }
