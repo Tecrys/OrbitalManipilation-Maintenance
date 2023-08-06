@@ -44,7 +44,7 @@ public class synergypodHullmod extends BaseHullMod {
 //                }
  //           }
             Global.getCombatEngine().addPlugin(new synergypodAI(ship, source));
-            ship.setShipAI(null);
+//            ship.setShipAI(null);
 
             ship.setCustomData(key, true);
             ship.getCustomData().put(key, true);

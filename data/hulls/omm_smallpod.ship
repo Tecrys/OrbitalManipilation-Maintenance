@@ -31,7 +31,7 @@
       "size": "SMALL",
       "type": "HYBRID",
       "mount": "HARDPOINT",
-      "arc": 5,
+      "arc": 90,
       "angle": 0,
       "locations": [6.5, -0]
     },

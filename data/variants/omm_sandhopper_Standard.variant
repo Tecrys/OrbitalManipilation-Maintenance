@@ -3,12 +3,13 @@
   "hullId": "omm_sandhopper",
   "displayName": "Standard",
   "goalVariant": true,
-  "fluxCapacitors": 17,
-  "fluxVents": 18,
+  "fluxCapacitors": 21,
+  "fluxVents": 24,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "hardenedshieldemitter"
+    "hardenedshieldemitter",
+    "auxiliarythrusters"
   ],
   "weaponGroups": [
     {

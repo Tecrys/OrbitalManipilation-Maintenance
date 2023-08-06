@@ -31,7 +31,7 @@
       "size": "SMALL",
       "type": "SYNERGY",
       "mount": "HARDPOINT",
-      "arc": 15,
+      "arc": 90,
       "angle": 0,
       "locations": [6.5, -0]
     },

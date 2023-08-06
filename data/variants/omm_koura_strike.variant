@@ -4,11 +4,13 @@
   "displayName": "Strike",
   "goalVariant": false,
   "fluxCapacitors": 7,
-  "fluxVents": 7,
+  "fluxVents": 8,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "adaptive_coils"
+    "adaptive_coils",
+    "fluxcoil",
+    "fluxdistributor"
   ],
   "weaponGroups": [
     {

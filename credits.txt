@@ -2,7 +2,7 @@ Template: Snrasha
 
 Original draw: Till Freitag https://www.artstation.com/imrahil
 
-Coding: Snrasha, briansd9, tomatopaste, DeCell
+Coding: Lord_Dalton, Snrasha, briansd9, tomatopaste, DeCell
 
 Original drone weapon swap code from Arma Armatura by Shoi
 

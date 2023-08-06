@@ -30,7 +30,7 @@
       "size": "MEDIUM",
       "type": "HYBRID",
       "mount": "HARDPOINT",
-      "arc": 15,
+      "arc": 60,
       "angle": 0,
       "locations": [15.5, -0]
     },

@@ -61,12 +61,13 @@ public class omm_drone implements EveryFrameCombatPlugin {
                         || weap.getSlot().getId().equals("smlmissileslot")
                         || weap.getSlot().getId().equals("compositeslot")
                         || weap.getSlot().getId().equals("largeslot")
+                        || weap.getSlot().getId().equals("AIHelp")                        
                         || weap.getSlot().getId().equals("ballisticslot")) {
 
                     weap.getSprite().setSize(0, 0);
 
                     weap.disable(true);
-                    ship.removeWeaponFromGroups(weap);                           //removes the weapons swap "interface" from weapon groups
+//                   ship.removeWeaponFromGroups(weap);                           //removes the weapons swap "interface" from weapon groups
 
                     if (weap.getUnderSpriteAPI() != null) {
                         weap.getUnderSpriteAPI().setSize(0, 0);
@@ -118,7 +119,7 @@ public class omm_drone implements EveryFrameCombatPlugin {
 
                             WeaponGroupAPI group = ship.getWeaponGroupFor(weapon);
                             if (group != null) {
-                                group.removeWeapon(0);
+//                                group.removeWeapon(0);
 
                                 fighter.getWeaponGroupFor(dronewep).addWeaponAPI(weapon);
                                 fighter.getVariant().assignUnassignedWeapons();

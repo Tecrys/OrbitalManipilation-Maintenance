@@ -8,15 +8,14 @@
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "militarized_subsystems"
+    "militarized_subsystems",
+    "auxiliarythrusters"
   ],
   "weaponGroups": [
     {
       "autofire": false,
       "mode": "ALTERNATING",
-      "weapons": {
-        "pdslot": "pdburst"
-      }
+      "weapons": {}
     },
     {
       "autofire": false,
@@ -28,13 +27,15 @@
     {
       "autofire": false,
       "mode": "LINKED",
-      "weapons": {}
+      "weapons": {
+        "righthook": "sabotpod"
+      }
     },
     {
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "righthook": "sabotpod",
+        "pdslot": "pdburst",
         "smlhybridslot": "lightneedler"
       }
     },

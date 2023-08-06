@@ -3,8 +3,8 @@
   "hullId": "omm_euphausia",
   "displayName": "Standard",
   "goalVariant": true,
-  "fluxCapacitors": 14,
-  "fluxVents": 15,
+  "fluxCapacitors": 25,
+  "fluxVents": 28,
   "quality": 1,
   "permaMods": [],
   "hullMods": [

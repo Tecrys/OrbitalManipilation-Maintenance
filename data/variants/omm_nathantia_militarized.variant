@@ -3,8 +3,8 @@
   "hullId": "omm_nathantia",
   "displayName": "militarized",
   "goalVariant": true,
-  "fluxCapacitors": 20,
-  "fluxVents": 24,
+  "fluxCapacitors": 41,
+  "fluxVents": 48,
   "quality": 1,
   "permaMods": [],
   "hullMods": [

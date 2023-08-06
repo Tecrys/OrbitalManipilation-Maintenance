@@ -3,12 +3,14 @@
   "hullId": "omm_koura",
   "displayName": "Standard",
   "goalVariant": false,
-  "fluxCapacitors": 9,
+  "fluxCapacitors": 10,
   "fluxVents": 10,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "adaptive_coils"
+    "adaptive_coils",
+    "fluxcoil",
+    "fluxdistributor"
   ],
   "weaponGroups": [
     {

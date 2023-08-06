@@ -47,7 +47,12 @@ public class compositepodManager implements AdvanceableListener {
         int indexInWing = drone.getWing().getWingMembers().indexOf(drone);
         int oddOrEvenNoOfWings = relevantWings.size() % 2;
         float anglebetweenDrones = 360f / drone.getWing().getSpec().getNumFighters();
-
+ 
+        if (mothership.getHullSpec().getHullId().equals("omm_sandhopper")){
+                angleFromBasepos = 42f;
+                distBetweenClusters = 62f;
+                distFromClusterCenterToDrone = 30f;
+        }
         //todo better idea for defensive formation?
         if (mothership.isPullBackFighters()) {//defensive formation
             Vector2f basePos = MathUtils.getPointOnCircumference(mothership.getShieldCenterEvenIfNoShield(), mothership.getShieldRadiusEvenIfNoShield(), mothership.getFacing());
