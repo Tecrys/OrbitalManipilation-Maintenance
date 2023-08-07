@@ -1,4 +1,4 @@
-package tecrys.data.missions.FreitagCorporation_classic;
+package data.missions.FreitagCorporation_classic;
 
 import com.fs.starfarer.api.fleet.FleetGoal;
 import com.fs.starfarer.api.fleet.FleetMemberType;

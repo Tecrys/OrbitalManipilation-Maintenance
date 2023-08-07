@@ -3,7 +3,7 @@
   "specClass": "beam",
   "type": "DECORATIVE",
   "size": "SMALL",
-    	"everyFrameEffect":"tecrys.data.scripts.weapons.omm_compositepod",
+    	#"everyFrameEffect":"tecrys.data.scripts.weapons.omm_compositepod",
   "collisionClass": "RAY",
   "collisionClassByFighter": "RAY_FIGHTER",
   "turretSprite": "graphics/ships/Fighters/omm_hopperdronedeco.png",

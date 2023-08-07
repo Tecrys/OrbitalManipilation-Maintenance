@@ -14,8 +14,8 @@
   "builtInMods": [
     "autorepair",
     "shield_always_on",
-    "do_not_back_off",
-    "fluxshunt",
+    #"do_not_back_off",
+    #"fluxshunt",
     "omm_mainframelink"
   ],
   "builtInWeapons": {

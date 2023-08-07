@@ -37,14 +37,17 @@ public class synergypodHullmod extends BaseHullMod {
 
                 manager.drones.add(ship);
             }
-
+//                        ShipAPI player = Global.getCombatEngine().getPlayerShip();
 //            for (WeaponGroupAPI group : ship.getWeaponGroupsCopy()) {
- //               if (!group.isAutofiring()) {
- //                   ship.giveCommand(ShipCommand.TOGGLE_AUTOFIRE, null, ship.getWeaponGroupsCopy().indexOf(group));
+//                if (group.isAutofiring() && ship.equals(player)) {
+//                    ship.giveCommand(ShipCommand.TOGGLE_AUTOFIRE, null, ship.getWeaponGroupsCopy().indexOf(group));
 //                }
- //           }
+//                            else    if (!group.isAutofiring()) {
+//                    ship.giveCommand(ShipCommand.TOGGLE_AUTOFIRE, null, ship.getWeaponGroupsCopy().indexOf(group));
+//                }
+            
             Global.getCombatEngine().addPlugin(new synergypodAI(ship, source));
-//            ship.setShipAI(null);
+            ship.setShipAI(null);
 
             ship.setCustomData(key, true);
             ship.getCustomData().put(key, true);

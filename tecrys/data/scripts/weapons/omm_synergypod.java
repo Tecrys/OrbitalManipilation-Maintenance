@@ -64,28 +64,34 @@
 //                        diffdrone = MathUtils.clamp(diffdrone, -maxVeldrone, maxVeldrone);
 //                        FIGHTER.setFacing(diffdrone + FIGHTER.getFacing());        //sets facing of the drone
 //
-//                        FIGHTER.setShipTarget(SHIP.getShipTarget());
-//
 //                        ShipAPI player = Global.getCombatEngine().getPlayerShip();
 //                        {
-//                            if (player == this.SHIP && !this.FIGHTER.isLanding() && !this.FIGHTER.isLiftingOff() && dronewep.getSlot().getId().equals("omm_laser")) {
+//                            if (player == SHIP && !this.FIGHTER.isLanding() && !this.FIGHTER.isLiftingOff() && dronewep.getSlot().getId().equals("omm_laser")) {
 //                                dronewep.getAnimation().setFrame(01);
+//
 //                                //MagicRender.singleframe(sprite, dronewep.getLocation(), size, dronewep.getCurrAngle(), Color.WHITE, false, CombatEngineLayers.FIGHTERS_LAYER);
 //
 //                            }
 //                        }
-//                        if (dronewep.getSlot().getId().equals("synergyslot")) {
-//                            if (Mouse.isButtonDown(0) && !player.getFluxTracker().isOverloadedOrVenting() && (dronewep.getType() != MISSILE)) {
-//                                this.FIGHTER.giveCommand(ShipCommand.FIRE, mousepos, 0);           //clicky left drone shooty
-//                            }
-//                            if (Mouse.isButtonDown(2) && !player.getFluxTracker().isOverloadedOrVenting() && (dronewep.getType() == MISSILE)) {
-//                                this.FIGHTER.giveCommand(ShipCommand.FIRE, mousepos, 0);           //clicky left drone shooty
-//                            }
-//                        }
+////                                    for (WeaponGroupAPI group : this.SHIP.getWeaponGroupsCopy()) {
+////                if (group.isAutofiring() && this.SHIP.equals(player)) {
+////                    this.SHIP.giveCommand(ShipCommand.TOGGLE_AUTOFIRE, null, this.SHIP.getWeaponGroupsCopy().indexOf(group));
+////                }
+////                else if (group.isAutofiring()){
+////                                        this.SHIP.giveCommand(ShipCommand.TOGGLE_AUTOFIRE, null, this.SHIP.getWeaponGroupsCopy().indexOf(group));
+////                    }
+////                                    }
+////                        if (this.SHIP.equals(player)){
+////                                if (Mouse.isButtonDown(0) && !player.getFluxTracker().isOverloadedOrVenting() && (dronewep.getType() != MISSILE)) {
+////                                    this.FIGHTER.giveCommand(ShipCommand.FIRE, mousepos, 0);           //clicky left drone shooty
+////                                }
+////                                if (Mouse.isButtonDown(2) && !player.getFluxTracker().isOverloadedOrVenting() && (dronewep.getType() == MISSILE)) {
+////                                    this.FIGHTER.giveCommand(ShipCommand.FIRE, mousepos, 0);           //clicky left drone shooty
+////                                }}
 //                        if (player != this.SHIP) {
-//                            for (WeaponGroupAPI group : FIGHTER.getWeaponGroupsCopy()) {
-//                                this.FIGHTER.giveCommand(ShipCommand.TOGGLE_AUTOFIRE, null, FIGHTER.getWeaponGroupsCopy().indexOf(group));
-//                            }
+////                            for (WeaponGroupAPI group : FIGHTER.getWeaponGroupsCopy()){
+////                            this.FIGHTER.giveCommand(ShipCommand.TOGGLE_AUTOFIRE, null, FIGHTER.getWeaponGroupsCopy().indexOf(group));       
+////                            }
 //                            if (dronewep.getAnimation() != null) {
 //                                dronewep.getAnimation().setFrame(00);
 //                            }
@@ -121,7 +127,7 @@
 //            return;
 //        }
 //        if (isWeaponSwappedsynergy) {
-//            FIGHTER.setShipAI(null);
+//            this.FIGHTER.setShipAI(null);
 //            return;
 //        }
 //        if (!isWeaponSwappedsynergy) {
