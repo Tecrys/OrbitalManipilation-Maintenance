@@ -4,11 +4,12 @@
   "displayName": "Cargo",
   "goalVariant": true,
   "fluxCapacitors": 10,
-  "fluxVents": 11,
+  "fluxVents": 12,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "expanded_cargo_holds"
+    "expanded_cargo_holds",
+    "insulatedengine"
   ],
   "weaponGroups": [
     {

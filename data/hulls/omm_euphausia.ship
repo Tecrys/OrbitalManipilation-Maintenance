@@ -18,13 +18,13 @@
     "repair_gantry"
   ],
   "builtInWings": [
-    "FreitagCorporation_ShieldDrone_wing",
-    "FreitagCorporation_ShieldDrone_wing",
     "omm_synergypod_wing",
     "omm_synergypod_wing",
-    "omm_pddrone_wing",
     "omm_missilepod_wing",
-    "omm_missilepod_wing"
+    "omm_missilepod_wing",
+    "omm_pddrone_wing",
+    "omm_nanodrone_wing",
+    "FreitagCorporation_ShieldDrone_wing"
   ],
   "builtInWeapons": {
     "AIHelp": "omm_chafflauncher",

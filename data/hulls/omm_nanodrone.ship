@@ -2,40 +2,49 @@
   "hullName": "Algae Tender",
   "hullId": "omm_nanodrone",
   "hullSize": "FIGHTER",
-  "spriteName": "graphics/ships/Fighters/omm_nanodrone.png",
+  "spriteName": "graphics/ships/Fighters/omm_repair.png",
   "style": "FREITAG_CORP_TECH",
-  "height": 14,
-  "width": 15,
-  "center": [7.5, 7],
-  "collisionRadius": 14,
-  "shieldCenter": [0, 0],
-  "shieldRadius": 16.5,
+  "height": 54,
+  "width": 70,
+  "center": [35, 24.5],
+  "collisionRadius": 34.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 35,
   "viewOffset": 0,
   "builtInMods": [
-      "autorepair",
+    "autorepair",
     "fluxshunt",
     "omm_mainframelink",
     "no_weapon_flux",
     "do_not_back_off"
   ],
-  "builtInWeapons": {
-    "AIHelp": "omm_chafflauncher",
-  },
-  "weaponSlots": [
+  "weaponSlots": [],
+  "engineSlots": [
     {
-      "id": "AIHelp",
-      "size": "SMALL",
-      "type": "BUILT_IN",
-      "mount": "HIDDEN",
-      "arc": 1,
-      "angle": 0,
-      "locations": [3, -0]
+      "location": [-23, -11],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "FreitagCorporation_Engine"
+    },
+    {
+      "location": [-23, 11],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "FreitagCorporation_Engine"
     }
   ],
-  "engineSlots": [],
   "bounds": [
-    -6.5, 8,
-    -6.5, -8,
-    8.5, -0
+    -23.5, 14,
+    -3.5, 19.5,
+    20.5, 20,
+    28, 13.5,
+    28, -13.5,
+    20.5, -20,
+    -3.5, -19.5,
+    -23.5, -14
   ]
 }

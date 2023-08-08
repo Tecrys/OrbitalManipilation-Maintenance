@@ -4,11 +4,12 @@
   "displayName": "Personnel",
   "goalVariant": true,
   "fluxCapacitors": 10,
-  "fluxVents": 11,
+  "fluxVents": 12,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "additional_berthing"
+    "additional_berthing",
+    "insulatedengine"
   ],
   "weaponGroups": [
     {

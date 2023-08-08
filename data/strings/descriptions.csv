@@ -67,6 +67,12 @@ impossible to keep the ecosystems stable without regularly adding biological mat
 
 On a side note, fleets with Macrocheira-class ships seem to have more crew casualties even if no combat activities were conducted and higher than average missing person reports are filed. 
 Among superstitious crew this is proof for these ships being haunted.",,,
+omm_nanodrone,SHIP,"This drone is purpose-built for repair and maintenance duty.
+
+A staple of Freitag Corporation ships, modular drones can be euipped with many tools using the standardized mount system widely used throughout the Persean Sector. Albeit intended as
+precision tool carriers said mount system makes the drones able to accept a wide choice of weapons. 
+With the restrictions on AI useage put in place by the Hegemony after the second AI war corporation ships rely on wireless consciousness shifting technology allowing gunners real-time direct control over the drones. 
+Compared to drones built by other manufacturers this system gives the user unparalleled precision and control over each action performed by the drone, be it welding armour plates, manipulating objects in space or in some cases using weaponry. ",,,
 omm_pddrone,SHIP,"This particular drone model has a small energy mount and is equipped with an integrated point defense AI.
 
 A staple of Freitag Corporation ships, modular drones can be euipped with many tools using the standardized mount system widely used throughout the Persean Sector. Albeit intended as
@@ -118,7 +124,7 @@ With the restrictions on AI useage put in place by the Hegemony after the second
 Compared to drones built by other manufacturers this system gives the user unparalleled precision and control over each action performed by the drone, be it welding armour plates, manipulating objects in space or in some cases using weaponry. ",,,
 FreitagCorporation_ShieldDrone,SHIP,"Shield drones are deployed by several Freitag Corporation vessels to protect the mothership from debris, asteroid fragments or enemy ordnance. 
 The experience would be too traumatizing for humans to be controlled remotely via the companies trademark wireless consciousness shift and thus the drones have to rely on a crude theta level AI. This is the highest grade AI level permitted on civilian grade ships after the events of the second AI war and unfortunately drone performance is noticably limited by that.",,,
-omm_algaepod,SHIP,A cluster of algae pods deployed during combat by Limnopilos.,A cluster of algae pods deployed during combat by Limnopilos.,,
+omm_algaepod,SHIP,A cluster of algae pods deployed during combat by Limnopilos.,A cluster of algae pods deployed during combat by Limnopilos.,    ,
 omm_koura,SHIP,"Freitag Corporation's main product line always relied on civilian grade equipment, superior salvage vessels and orbital construction but in recent years demand for military grade products skyrocketed. 
 Due to a lack of technological know-how in the field of armaments and armour Research and Development department opted to instead rely on phase technology, in which the corporation has some previous experience, albeit in the form of multi-purpose manipulators already used on most ships currently in production.
 

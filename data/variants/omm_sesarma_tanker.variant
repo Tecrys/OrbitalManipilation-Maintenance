@@ -4,11 +4,12 @@
   "displayName": "Fuel",
   "goalVariant": true,
   "fluxCapacitors": 10,
-  "fluxVents": 11,
+  "fluxVents": 12,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "auxiliary_fuel_tanks"
+    "auxiliary_fuel_tanks",
+    "insulatedengine"
   ],
   "weaponGroups": [
     {

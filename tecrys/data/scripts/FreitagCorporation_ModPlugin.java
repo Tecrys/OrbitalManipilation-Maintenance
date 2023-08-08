@@ -2,9 +2,14 @@ package tecrys.data.scripts;
 
 import com.fs.starfarer.api.BaseModPlugin;
 import com.fs.starfarer.api.Global;
+import com.fs.starfarer.api.PluginPick;
+import com.fs.starfarer.api.campaign.CampaignPlugin;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
+import com.fs.starfarer.api.combat.ShipAIPlugin;
+import com.fs.starfarer.api.combat.ShipAPI;
+import com.fs.starfarer.api.fleet.FleetMemberAPI;
 import tecrys.data.scripts.world.ommGen;
-//import exerelin.campaign.SectorManager;
+import tecrys.data.scripts.ai.repairdroneai;
 import exerelin.campaign.SectorManager;
 
 public class FreitagCorporation_ModPlugin extends BaseModPlugin {
@@ -20,7 +25,15 @@ public class FreitagCorporation_ModPlugin extends BaseModPlugin {
         }
         isExerelin = foundExerelin;
     }
-
+  public PluginPick<ShipAIPlugin> pickShipAI(FleetMemberAPI member, ShipAPI ship) {
+    switch (ship.getHullSpec().getHullId()) {
+      case "omm_nanodrone":
+        return new PluginPick(new repairdroneai(ship), CampaignPlugin.PickPriority.MOD_GENERAL);
+    } 
+//    if (ship.getHullSpec().getHullId().startsWith("edshipyard_wurg_"))
+//      return new PluginPick(new WurgandalModuleShipAI(ship), CampaignPlugin.PickPriority.MOD_GENERAL); 
+    return super.pickShipAI(member, ship);
+  }
     @Override
     public void onNewGame() {
         boolean haveNexerelin = Global.getSettings().getModManager().isModEnabled("nexerelin");

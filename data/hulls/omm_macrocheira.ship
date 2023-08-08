@@ -18,7 +18,9 @@
     "omm_algaefarm"
   ],
   "builtInWings": [
-    "omm_pddrone_wing"
+    "omm_pddrone_wing",
+    "omm_nanodrone_wing",
+    "omm_nanodrone_wing"
   ],
   "builtInWeapons": {
     "MODULARPD": "omm_pddronedeco",

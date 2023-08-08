@@ -54,7 +54,10 @@ public class omm_algaefarm extends BaseHullMod {
 
     public void advanceInCampaign(FleetMemberAPI member, float amount) {
         //Checks if the fleet is real and belongs to the player.
-        if (member.getFleetData().getFleet().isInHyperspace() || member.getFleetData() == null || member.getFleetData().getFleet() == null) {
+		if (member.getFleetData() == null) return;
+		if (member.getFleetData().getFleet() == null) return;
+        
+        if (member.getFleetData().getFleet().isInHyperspace()) {
             return;
         }
         if (member.getFleetData().getFleet().getStarSystem() != null && !member.isMothballed() && member.getFleetData().getFleet().getStarSystem().getStar().isNormalStar()) {
