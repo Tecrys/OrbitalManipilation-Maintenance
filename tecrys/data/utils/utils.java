@@ -22,12 +22,11 @@ public class utils {
         return (T) listener;
     }
 
-
-    public static boolean playerHasCommodity(String id)
-    {
+    public static boolean playerHasCommodity(String id) {
         CampaignFleetAPI playerFleet = Global.getSector().getPlayerFleet();
-        if (playerFleet == null)
+        if (playerFleet == null) {
             return false;
+        }
         List<CargoStackAPI> playerCargoStacks = playerFleet.getCargo().getStacksCopy();
 
         for (CargoStackAPI cargoStack : playerCargoStacks) {
@@ -39,34 +38,37 @@ public class utils {
         return false;
     }
 
-    public static void removePlayerCommodity(String id)
-    {
+    public static void removePlayerCommodity(String id) {
         CampaignFleetAPI playerFleet = Global.getSector().getPlayerFleet();
-        if (playerFleet == null)
+        if (playerFleet == null) {
             return;
+        }
         List<CargoStackAPI> playerCargoStacks = playerFleet.getCargo().getStacksCopy();
 
         for (CargoStackAPI cargoStack : playerCargoStacks) {
             if (cargoStack.isCommodityStack() && cargoStack.getCommodityId().equals(id)) {
                 cargoStack.subtract(1);
-                if (cargoStack.getSize() <= 0)
+                if (cargoStack.getSize() <= 0) {
                     playerFleet.getCargo().removeStack(cargoStack);
+                }
                 return;
             }
         }
     }
 
-    public static void addPlayerCommodity(String commodityId, int amount)
-    {
+    public static void addPlayerCommodity(String commodityId, int amount) {
         CampaignFleetAPI playerFleet = Global.getSector().getPlayerFleet();
-        if (playerFleet == null)
+        if (playerFleet == null) {
             return;
+        }
         CargoAPI playerFleetCargo = playerFleet.getCargo();
-        if(commodityId.equals("fuel")){
+        if (commodityId.equals("fuel")) {
             playerFleetCargo.addFuel(amount);
-        }else if(commodityId.equals("supplies")){
+        } else if (commodityId.equals("supplies")) {
             playerFleetCargo.addSupplies(amount);
-        }else{
+        } else if (commodityId.equals("crew")) {
+            playerFleetCargo.removeCrew(amount);
+        } else {
             playerFleetCargo.addCommodity(commodityId, amount);
         }
     }
